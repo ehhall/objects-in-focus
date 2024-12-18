@@ -1,6 +1,10 @@
 # Objects in Focus
 
-This is a suite of data and tools for mapping fixations to objects segmented from cluttered, real-world scenes. Github and paper are a work in progress. We would recommend that you wait before using any of the data/code in any official capacity, but if you do, please consider citing the papers in the Documentation section :) 
+This is a suite of data and tools for mapping fixations to objects segmented from cluttered, real-world scenes. 
+
+Github and paper are a work in progress. 
+
+We would recommend that you wait before using any of the data/code in any official capacity, but if you do, please consider citing the papers in the Documentation section :) 
 
 ## Google Colab
 
