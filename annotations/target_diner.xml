@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>153</id>
+      <name>target_diner</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-06 02:00:49.631841+03:00</created>
+      <updated>2019-05-14 00:07:21.020475+03:00</updated>
+      <source>1 images: target_diner.png, ...</source>
+      <labels>
+        <label>
+          <name>barstools</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>floor</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>menu</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>wall</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sign</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>fridge</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling_light</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>window</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>counter</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>booth</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>utensil</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>barstool</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ketchup</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>salt_and_pepper</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>coffee_machine</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>153</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=153</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:32:13.041235+03:00</dumped>
+  </meta>
+  <image id="0" name="target_diner.png" width="1024" height="768">
+    <polygon label="salt_and_pepper" points="397.09,272.18;412.70,272.50;412.79,286.58;407.89,287.48;396.59,286.98" occluded="0" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="menu" points="269.95,264.78;342.94,263.19;342.26,351.60;269.50,353.41" occluded="1" client_id="69" z_order="40">
+    </polygon>
+    <polygon label="fridge" points="152.76,158.36;231.87,156.77;263.83,160.62;265.87,222.73;267.09,264.10;227.63,271.35;156.48,270.22" occluded="1" client_id="29" z_order="30">
+    </polygon>
+    <polygon label="floor" points="1023.99,547.37;819.07,415.21;624.10,284.56;512.99,276.73;424.92,285.15;362.93,289.71;281.06,337.08;57.60,458.10;0.00,492.17;0.00,768.00;1024.00,768.00" occluded="1" client_id="67" z_order="38">
+    </polygon>
+    <polygon label="barstool" points="496.47,471.67;500.77,460.34;512.11,448.09;529.56,440.61;546.79,438.12;578.75,439.71;589.86,440.61;604.82,451.27;612.53,468.72;614.11,487.08;609.35,507.71;597.38,516.69;568.80,526.20;563.90,613.00;542.60,612.90;535.50,524.35;523.74,521.54;511.07,518.25;500.46,506.65;496.58,489.78" occluded="1" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="utensil" points="374.90,369.15;393.65,371.51;441.80,371.77;445.08,371.38;446.13,367.18;445.60,363.12;400.21,361.67;393.39,360.62;388.80,358.39;374.24,366.53" occluded="0" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="sign" points="236.92,117.32;255.99,123.16;257.50,76.71;237.86,66.32" occluded="0" client_id="35" z_order="36">
+    </polygon>
+    <polygon label="window" points="400.30,198.39;398.70,211.70;432.66,211.83;433.32,199.04" occluded="0" client_id="22" z_order="23">
+    </polygon>
+    <polygon label="booth" points="685.28,152.92;693.11,152.92;692.33,211.67;694.40,290.40;699.49,292.48;708.74,281.36;725.19,273.41;735.76,270.94;768.82,270.19;848.50,265.69;848.73,325.50;1024.00,311.90;1024.00,510.80;798.99,542.81;783.32,519.70;710.85,443.32;694.40,428.05;680.69,390.05;684.34,322.68" occluded="1" client_id="18" z_order="19">
+    </polygon>
+    <polygon label="utensil" points="367.85,418.67;384.63,422.07;440.39,420.71;449.91,430.23;439.25,436.81;374.42,439.75;361.96,438.85;346.32,435.22;345.18,432.95;346.54,428.19;350.85,424.34;358.10,426.38;364.00,420.71" occluded="0" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="counter" points="343.57,294.45;345.08,292.94;352.63,293.51;388.15,272.35;433.29,249.31;489.58,248.93;490.50,293.80;490.77,319.86;485.88,448.27;350.70,448.50" occluded="1" client_id="20" z_order="21">
+    </polygon>
+    <polygon label="barstool" points="506.17,539.76;525.76,529.97;553.18,521.15;571.13,520.83;610.95,525.72;633.47,538.45;645.88,561.30;651.75,586.76;645.16,630.40;629.88,650.38;594.24,665.66;588.62,759.63;556.83,758.98;547.30,663.86;531.66,660.92;513.97,653.65;501.05,642.78;491.78,625.54;485.44,598.45;488.94,569.17;494.94,554.51" occluded="1" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="ketchup" points="384.86,252.36;382.20,265.90;382.06,273.16;381.76,286.46;384.96,287.26;392.16,287.26;392.86,286.26;393.36,269.06;393.10,264.50;391.96,256.26;391.06,251.26;387.66,250.36;386.16,250.86" occluded="0" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="window" points="620.28,196.22;620.58,208.52;652.08,209.12;651.70,196.30" occluded="0" client_id="26" z_order="27">
+    </polygon>
+    <polygon label="window" points="482.08,199.00;482.28,210.30;524.48,210.22;524.18,198.72" occluded="0" client_id="24" z_order="25">
+    </polygon>
+    <polygon label="barstools" points="499.37,278.25;507.53,276.21;524.53,277.11;529.06,277.57;533.37,286.41;540.40,300.23;544.25,312.47;549.01,322.67;556.33,348.20;554.04,359.99;545.91,366.11;534.10,367.92;536.05,406.57;518.75,406.89;513.70,384.10;505.40,382.30;495.09,358.67;495.80,345.20;496.72,313.00;495.88,296.27;496.88,282.55" occluded="0" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="sign" points="807.85,156.29;828.93,153.57;832.11,151.76;832.33,124.79;824.85,123.20;806.95,127.96;805.59,130.91;804.45,156.29" occluded="1" client_id="32" z_order="33">
+    </polygon>
+    <polygon label="barstool" points="515.76,768.00;538.10,740.55;592.25,701.96;632.86,695.87;682.95,707.38;720.17,733.78;739.12,756.79;743.86,768.00" occluded="0" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="wall" points="0.05,0.00;165.97,78.83;274.55,126.30;361.51,162.49;375.09,167.19;404.00,170.76;456.31,170.95;516.01,170.39;575.75,168.88;604.37,168.51;626.65,164.84;643.58,162.12;676.24,150.69;719.72,134.90;795.02,108.48;858.90,87.24;958.59,54.24;1024.00,32.34;1024.00,544.49;690.30,332.00;626.80,285.00;516.80,276.80;365.80,289.90;257.10,350.40;58.60,458.70;0.00,490.50" occluded="1" client_id="66" z_order="37">
+    </polygon>
+    <polygon label="menu" points="376.20,237.70;414.12,237.81;415.48,266.37;415.48,286.54;376.30,287.90" occluded="1" client_id="70" z_order="41">
+    </polygon>
+    <polygon label="booth" points="1024.00,302.89;896.17,309.94;858.15,310.88;835.54,320.28;810.20,342.85;808.28,124.79;793.05,125.92;792.48,277.09;798.88,543.83;850.20,600.52;1013.73,717.18;1024.00,724.23" occluded="0" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="fridge" points="0.00,111.76;99.43,128.09;98.77,177.05;98.58,225.00;103.87,225.94;105.76,229.73;105.01,242.95;124.36,291.98;145.52,352.17;147.80,503.80;0.00,596.82" occluded="1" client_id="28" z_order="29">
+    </polygon>
+    <polygon label="ceiling_light" points="498.00,22.64;499.14,136.62;506.58,136.62;516.77,78.26;524.99,28.12;521.08,23.82" occluded="0" client_id="27" z_order="28">
+    </polygon>
+    <polygon label="booth" points="572.38,282.92;589.80,309.00;602.30,334.14;622.55,355.02;636.15,359.55;683.29,362.28;748.90,358.80;747.20,183.40;599.47,178.28;570.14,185.06" occluded="1" client_id="30" z_order="31">
+    </polygon>
+    <polygon label="booth" points="370.51,177.48;393.23,181.00;408.11,184.14;530.71,177.87;530.32,224.87;529.54,293.97;528.99,305.92;523.31,313.83;496.36,317.63;367.69,315.98;329.89,316.26;332.36,240.93;342.15,234.12;344.97,171.99" occluded="1" client_id="31" z_order="32">
+    </polygon>
+    <polygon label="ceiling" points="1024.00,32.71;920.85,66.56;764.33,118.26;642.59,162.44;598.08,168.65;559.39,168.84;440.42,170.86;402.96,170.58;385.52,168.93;367.33,165.41;172.88,82.77;0.00,0.00;1024.00,0.00" occluded="0" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="counter" points="469.06,768.00;477.18,649.94;486.28,472.47;480.19,310.03;316.70,312.70;230.43,368.18;51.82,478.40;0.00,512.19;0.00,768.00" occluded="0" client_id="19" z_order="20">
+    </polygon>
+    <polygon label="ketchup" points="299.80,356.20;303.81,352.66;304.07,324.72;302.37,306.35;299.09,287.99;287.28,287.86;282.69,322.10;281.77,326.16;281.64,354.76;290.04,356.20" occluded="0" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="sign" points="0.00,62.72;152.86,103.90;147.78,0.00;0.00,0.00" occluded="0" client_id="33" z_order="34">
+    </polygon>
+    <polygon label="coffee_machine" points="160.87,229.65;198.86,228.09;251.74,232.39;249.90,257.40;245.09,300.94;250.80,309.13;250.80,314.34;222.76,328.36;137.21,329.34;137.56,230.79" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="sign" points="303.01,90.88;303.95,151.51;335.33,159.81;334.20,111.09" occluded="0" client_id="34" z_order="35">
+    </polygon>
+    <polygon label="utensil" points="276.33,623.74;399.95,619.04;414.53,599.77;414.06,572.51;296.08,577.68;274.92,560.75;265.05,570.16;232.15,603.06;233.56,605.88;265.99,609.64" occluded="0" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="window" points="373.63,198.06;384.23,198.17;384.01,212.05;339.63,212.05;340.40,197.62" occluded="0" client_id="23" z_order="24">
+    </polygon>
+    <polygon label="utensil" points="407.56,321.93;406.38,328.09;414.12,328.62;423.96,329.27;463.57,327.83;463.97,325.60;453.08,324.02;425.79,322.06;419.89,319.96;417.40,319.30;410.45,320.88" occluded="0" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="salt_and_pepper" points="309.57,328.41;324.51,327.96;333.35,328.18;335.87,328.86;336.77,352.66;330.86,355.16;305.95,355.16;304.36,353.80;304.36,335.21;305.47,329.54" occluded="0" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="menu" points="108.25,461.91;111.54,304.44;238.92,303.97;237.98,460.03" occluded="1" client_id="68" z_order="39">
+    </polygon>
+    <polygon label="ketchup" points="134.62,353.89;127.00,411.55;125.64,419.71;124.28,471.94;127.82,473.30;143.05,474.66;163.72,468.41;167.26,464.33;167.26,411.55;162.64,388.98;158.28,362.86;158.28,352.26;153.12,350.08;146.32,348.72;138.43,351.44" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="barstool" points="503.41,397.02;517.01,391.17;532.31,386.64;548.94,386.26;569.34,388.15;583.32,393.62;586.53,412.51;584.83,432.73;580.29,441.42;555.50,447.80;548.90,508.70;535.30,508.80;525.59,447.99;513.80,443.91;507.68,441.87;502.01,438.92;497.71,429.40;496.57,415.80;497.93,407.64" occluded="1" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="salt_and_pepper" points="165.19,464.90;171.45,467.62;201.64,467.07;214.43,462.18;211.16,424.09;205.99,421.92;188.04,421.92;179.34,421.10;171.72,423.55;170.63,424.64;168.46,434.97" occluded="0" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="window" points="570.48,208.22;606.38,208.72;605.18,197.22;569.78,197.32" occluded="0" client_id="25" z_order="26">
+    </polygon>
+    <polygon label="window" points="1024.00,57.48;1016.42,53.89;928.94,79.68;878.02,94.04;863.99,97.63;865.95,143.33;866.50,289.80;964.43,309.80;1024.00,323.51" occluded="0" client_id="21" z_order="22">
+    </polygon>
+  </image>
+</annotations>

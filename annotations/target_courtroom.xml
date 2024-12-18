@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>148</id>
+      <name>target_courtroom</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-02 23:21:29.740999+03:00</created>
+      <updated>2019-05-14 00:00:17.237086+03:00</updated>
+      <source>1 images: target_courtroom.png, ...</source>
+      <labels>
+        <label>
+          <name>floor</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>screen</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>podium</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>chair</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling_light</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>door</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>table</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>flag</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sign</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>wall</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>television</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>148</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=148</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:31:34.423015+03:00</dumped>
+  </meta>
+  <image id="0" name="target_courtroom.png" width="1024" height="768">
+    <polygon label="chair" points="627.17,605.69;673.75,602.45;716.01,611.33;755.07,606.16;775.90,599.40;765.88,722.31;765.27,767.81;623.83,768.00" occluded="0" client_id="33" z_order="21">
+    </polygon>
+    <polygon label="table" points="394.70,273.00;758.90,277.90;767.10,459.40;351.08,453.51;354.78,315.50;358.78,279.83" occluded="1" client_id="61" z_order="27">
+    </polygon>
+    <polygon label="ceiling_light" points="338.00,40.58;348.07,56.88;363.03,75.95;370.92,81.39;385.06,81.90;398.12,74.59;415.80,47.66;415.80,40.29;410.90,34.03;396.49,27.50;378.53,24.26;379.08,0.00;376.36,0.00;375.27,23.45;357.86,25.05;346.98,27.50;339.36,34.03" occluded="0" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="ceiling_light" points="112.56,40.86;123.44,61.26;136.50,79.48;156.35,90.09;173.76,87.10;186.82,74.59;200.69,56.09;194.98,46.84;183.55,40.58;159.34,33.78;159.07,0.00;155.26,0.00;155.26,31.88;131.87,31.61;116.64,35.14" occluded="0" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="screen" points="524.02,258.61;552.98,258.50;552.44,292.06;525.55,291.40" occluded="1" client_id="38" z_order="26">
+    </polygon>
+    <polygon label="chair" points="813.65,594.86;862.94,600.73;886.44,604.65;898.52,605.30;931.82,597.80;934.75,600.73;928.88,660.47;920.36,736.33;919.38,762.44;921.01,768.00;785.60,768.00;765.64,727.51;775.95,597.21;789.80,602.40;799.10,598.78" occluded="0" client_id="34" z_order="22">
+    </polygon>
+    <polygon label="flag" points="567.92,118.76;564.40,229.22;563.22,313.44;571.84,310.69;578.89,294.64;583.59,281.32;578.89,199.06;573.29,129.14;570.70,114.14" occluded="1" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="screen" points="193.05,408.48;261.89,409.84;255.64,483.83;252.92,512.66;182.71,509.13" occluded="0" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="wall" points="811.48,0.00;698.96,107.22;702.53,397.59;1024.00,689.87;1024.00,0.00" occluded="1" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="screen" points="677.61,415.12;752.66,416.48;762.72,514.67;685.20,514.95" occluded="0" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="chair" points="146.07,591.20;160.43,584.35;175.12,577.82;189.16,576.84;264.89,598.38;270.43,601.65;292.30,600.34;291.98,634.29;302.75,642.12;302.42,684.56;297.85,697.29;267.01,738.51;245.79,755.49;219.35,763.97;188.34,763.97;164.84,761.36;155.37,752.22;152.76,713.71;139.38,596.85" occluded="0" client_id="36" z_order="24">
+    </polygon>
+    <polygon label="door" points="856.31,172.50;933.40,156.05;936.22,360.99;938.70,563.20;855.61,512.39" occluded="1" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="podium" points="405.96,688.54;411.18,688.54;411.18,697.39;531.31,701.30;537.51,691.80;537.38,573.35;534.24,346.13;530.00,346.78;427.83,347.76;404.33,375.83;404.62,461.39" occluded="1" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="television" points="756.70,164.74;807.71,144.71;809.03,187.39;809.48,262.68;756.78,259.09" occluded="0" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="screen" points="466.61,296.97;526.46,296.52;525.55,380.39;464.80,377.67" occluded="0" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="door" points="205.31,215.89;255.60,215.90;256.50,396.70;205.31,395.91" occluded="1" client_id="32" z_order="20">
+    </polygon>
+    <polygon label="table" points="538.90,487.04;541.80,583.75;569.49,583.12;569.25,738.94;574.93,767.85;992.80,768.00;994.17,573.33;869.29,488.41" occluded="1" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="flag" points="472.32,123.78;477.19,159.36;470.53,296.19;468.41,345.97;478.20,341.72;493.87,281.34;493.54,244.13;485.12,141.73;487.57,129.23;486.49,121.62;482.11,119.17;479.41,118.06" occluded="1" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="table" points="0.00,430.23;267.03,336.22;298.99,332.93;301.34,430.23;0.00,592.11" occluded="1" client_id="62" z_order="28">
+    </polygon>
+    <polygon label="sign" points="218.71,107.02;218.58,127.61;221.08,129.05;237.80,128.80;237.46,107.41" occluded="0" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="ceiling" points="0.00,0.00;0.00,28.40;202.30,109.00;696.97,106.32;808.00,0.00" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="screen" points="618.80,255.20;648.69,254.41;649.32,294.87;619.88,294.08" occluded="1" client_id="37" z_order="25">
+    </polygon>
+    <polygon label="ceiling_light" points="572.21,41.40;582.00,55.82;596.96,75.37;613.55,80.03;620.35,75.95;635.58,67.51;651.63,36.50;651.63,29.70;641.30,20.97;613.28,18.80;612.19,0.00;609.20,0.00;609.47,18.01;594.78,21.82;582.54,26.14;574.65,32.67" occluded="0" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="chair" points="2.63,585.57;14.42,586.25;29.15,593.96;53.41,594.41;77.66,590.33;102.14,590.33;120.73,593.05;127.76,595.09;135.92,612.55;138.18,633.18;157.27,669.13;159.63,768.00;23.30,768.00;18.22,713.76;16.34,678.08;6.44,629.80;0.77,589.81" occluded="1" client_id="35" z_order="23">
+    </polygon>
+    <polygon label="wall" points="202.94,108.62;493.19,108.62;699.22,107.33;702.30,396.70;344.15,402.04;202.00,396.95" occluded="1" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="floor" points="1024.00,768.00;0.00,768.00;0.00,481.86;98.86,440.26;202.28,396.47;346.45,401.86;570.79,398.32;701.99,396.64;977.02,648.93;1024.00,692.72" occluded="1" client_id="31" z_order="19">
+    </polygon>
+    <polygon label="wall" points="0.00,26.47;201.23,108.40;202.30,397.20;0.00,481.20" occluded="1" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="table" points="0.00,526.30;96.97,475.40;400.38,486.11;401.46,492.88;363.39,563.62;364.80,688.70;374.29,692.79;374.01,708.82;356.62,753.42;350.32,768.00;0.00,768.00" occluded="1" client_id="9" z_order="10">
+    </polygon>
+  </image>
+</annotations>

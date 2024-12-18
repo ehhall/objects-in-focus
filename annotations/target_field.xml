@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>156</id>
+      <name>target_field</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-06 02:05:09.101286+03:00</created>
+      <updated>2019-05-06 10:31:06.987323+03:00</updated>
+      <source>1 images: target_field.png, ...</source>
+      <labels>
+        <label>
+          <name>building</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>tree</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sky</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>vineyard</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>mountain</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>hill</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>156</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=156</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:32:39.646532+03:00</dumped>
+  </meta>
+  <image id="0" name="target_field.png" width="1024" height="768">
+    <polygon label="building" points="474.97,417.29;496.62,399.87;541.41,399.38;590.18,398.13;620.29,415.80;620.79,455.61;539.67,455.61;475.72,456.36" occluded="1" client_id="15" z_order="12">
+    </polygon>
+    <polygon label="building" points="549.93,453.53;551.10,352.34;559.53,336.86;564.92,322.96;567.42,322.85;568.32,330.47;574.63,341.16;582.13,351.06;581.83,376.36;580.77,452.93" occluded="1" client_id="18" z_order="15">
+    </polygon>
+    <polygon label="building" points="673.92,336.86;710.38,337.55;728.70,378.33;730.22,444.79;663.80,447.40;665.06,366.87" occluded="0" client_id="19" z_order="16">
+    </polygon>
+    <polygon label="mountain" points="1024.00,179.08;930.11,179.08;901.91,192.06;881.04,210.67;833.09,203.34;795.87,211.80;711.26,251.85;688.70,261.43;641.09,338.65;663.54,383.61;944.27,377.97;1024.00,376.56" occluded="1" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="mountain" points="0.00,57.68;13.32,56.05;34.21,29.61;84.80,16.88;111.24,9.37;122.67,1.53;212.43,0.00;240.83,11.65;354.36,57.84;424.08,80.85;495.14,117.38;570.74,178.29;626.03,216.64;661.48,251.73;754.28,282.02;789.53,308.10;798.70,347.60;638.83,396.20;476.01,413.05;125.11,397.61;0.00,394.80" occluded="1" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="sky" points="1023.99,449.13;0.00,444.45;0.00,0.00;1024.00,0.00" occluded="1" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="hill" points="1024.00,228.24;972.30,251.25;893.11,289.83;854.53,299.98;750.29,302.69;638.61,306.75;591.23,314.20;545.88,328.41;488.35,393.39;451.80,470.55;646.06,452.95;826.78,442.80;1024.00,442.80" occluded="1" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="vineyard" points="863.93,436.70;915.24,434.78;939.92,444.54;958.33,434.35;973.60,417.16;978.30,410.46;994.36,404.62;999.46,414.42;1013.17,445.75;1024.00,448.89;1024.00,740.70;1001.85,736.74;992.25,724.91;944.85,623.94;899.73,538.78;877.91,496.01;868.59,466.32" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="building" points="209.30,388.13;207.79,414.38;192.86,421.37;188.33,428.93;186.59,494.16;238.69,492.59;240.50,427.34;233.89,422.00;223.50,413.65;223.03,391.45;223.03,387.20;219.56,385.46;215.15,384.69" occluded="1" client_id="20" z_order="17">
+    </polygon>
+    <polygon label="building" points="612.21,399.95;630.50,383.00;686.46,382.37;738.50,382.22;747.94,382.60;741.71,447.02;657.45,446.82;611.18,444.37" occluded="1" client_id="17" z_order="14">
+    </polygon>
+    <polygon label="tree" points="786.70,444.80;781.53,418.94;784.87,345.62;790.51,320.24;812.08,260.07;817.72,260.07;837.98,313.19;853.49,384.16;859.09,402.96;856.78,433.05;853.92,441.04" occluded="0" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="tree" points="723.72,395.68;734.68,390.21;741.67,378.30;753.76,369.43;771.14,369.62;789.08,386.24;799.94,418.58;794.50,443.97;728.77,446.91;721.97,433.77;716.98,410.19" occluded="1" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="building" points="922.88,315.08;937.18,303.01;951.74,297.50;976.93,296.19;977.45,309.31;977.06,327.67;930.88,329.38;923.54,328.06" occluded="0" client_id="21" z_order="18">
+    </polygon>
+    <polygon label="tree" points="701.95,387.13;721.50,390.90;733.24,414.87;738.95,423.03;749.01,399.64;755.27,393.93;763.16,405.90;768.60,416.51;768.60,444.25;667.95,451.05;668.50,435.00;680.74,409.70" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="building" points="229.14,494.08;229.42,464.16;229.14,442.40;257.16,398.06;285.99,400.51;298.51,418.46;301.77,426.62;311.94,425.59;320.95,415.04;361.26,416.23;432.01,415.15;444.50,436.14;445.10,482.90;306.37,491.42;283.68,491.96" occluded="1" client_id="14" z_order="11">
+    </polygon>
+    <polygon label="hill" points="1023.99,447.96;816.73,445.62;552.40,459.65;331.35,492.40;60.12,525.97;0.00,535.56;0.00,763.28;1024.00,768.00" occluded="1" client_id="22" z_order="19">
+    </polygon>
+    <polygon label="building" points="494.30,469.20;494.76,421.55;507.73,382.38;515.35,403.27;522.12,422.27;521.27,468.49" occluded="1" client_id="16" z_order="13">
+    </polygon>
+    <polygon label="vineyard" points="0.00,768.00;0.00,768.00;729.41,768.00;800.35,609.35;835.51,539.02;854.51,485.46;857.54,441.00;727.38,447.87;525.08,460.60;471.72,468.28;240.71,503.85;16.98,532.55;0.00,534.57" occluded="0" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="hill" points="0.00,297.27;63.29,315.55;153.31,322.32;165.49,311.49;253.48,331.12;267.70,328.41;318.46,334.50;368.55,347.36;461.95,393.39;498.50,419.78;517.45,461.07;313.04,492.88;130.29,517.25;0.00,535.53" occluded="1" client_id="0" z_order="1">
+    </polygon>
+  </image>
+</annotations>

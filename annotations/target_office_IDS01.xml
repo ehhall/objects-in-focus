@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>45</id>
+      <name>fan</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-02-26 03:32:55.695679+03:00</created>
+      <updated>2019-05-11 02:26:47.825184+03:00</updated>
+      <source>1 images: fan.jpg, ...</source>
+      <labels>
+        <label>
+          <name>bookshelf</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>keyboard</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>wall</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>box</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>phone</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>picture</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>binder</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>cubicle</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>whiteboard</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>fan</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>desk</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>stool</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>drawer</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>paper</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>corkboard</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bottle</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>computer</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>cabinet</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>book</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>poster</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>mouse</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>chair</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>board</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bag</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>floor</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>boxes</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>binders</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bottles</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>chairs</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>45</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=45</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-07-15 21:57:42.774761+03:00</dumped>
+  </meta>
+  <image id="0" name="fan.jpg" width="1024" height="768">
+    <polygon label="computer" points="957.69,678.72;953.73,768.00;1024.00,768.00;1024.00,672.93" occluded="0" client_id="27" z_order="28">
+    </polygon>
+    <polygon label="drawer" points="0.00,495.76;172.55,494.91;172.55,768.00;0.00,768.00" occluded="1" client_id="29" z_order="30">
+    </polygon>
+    <polygon label="stool" points="359.45,431.90;354.90,452.60;352.14,573.23;354.99,576.48;366.76,565.52;393.30,564.90;408.90,580.30;420.37,569.58;420.37,455.86;419.96,443.68;416.60,437.70;415.50,431.90;404.13,427.84;389.51,426.22;369.61,427.84" occluded="0" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="board" points="101.19,233.41;101.19,309.90;320.85,313.41;320.85,234.81" occluded="1" client_id="71" z_order="37">
+    </polygon>
+    <polygon label="paper" points="658.59,368.38;689.29,368.38;689.78,321.59;660.05,320.13" occluded="0" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="desk" points="665.42,432.99;671.00,530.40;689.00,543.90;778.90,529.40;779.80,502.20;870.33,552.29;978.10,526.80;778.90,422.10" occluded="1" client_id="18" z_order="19">
+    </polygon>
+    <polygon label="binder" points="174.33,727.21;288.37,698.55;286.61,673.99;245.09,656.44;141.00,678.67;139.83,702.06" occluded="1" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="bookshelf" points="356.67,341.88;575.98,342.46;574.80,502.10;354.33,505.04" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="boxes" points="640.71,286.15;643.05,306.61;659.43,310.12;741.88,309.54;745.39,280.30;745.39,248.72;691.01,246.96;688.67,265.09;657.09,265.68;649.49,273.28;649.49,283.22" occluded="0" client_id="35" z_order="36">
+    </polygon>
+    <polygon label="computer" points="854.80,715.60;872.74,730.50;979.69,721.02;985.44,612.05;960.70,597.80;861.91,597.50" occluded="1" client_id="26" z_order="27">
+    </polygon>
+    <polygon label="computer" points="779.54,465.45;794.97,473.57;879.00,473.00;882.70,382.60;861.40,374.50;784.40,377.70" occluded="1" client_id="25" z_order="26">
+    </polygon>
+    <polygon label="mouse" points="750.91,468.56;766.81,469.57;773.24,467.54;768.84,463.48;761.40,461.45;751.92,462.80" occluded="0" client_id="31" z_order="32">
+    </polygon>
+    <polygon label="desk" points="255.80,592.30;37.90,579.80;0.00,676.40;0.00,768.00;247.50,768.00;250.20,648.10" occluded="1" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="fan" points="808.25,380.71;852.60,382.17;851.62,372.91;847.24,371.94;838.95,324.18;848.70,320.77;850.16,308.58;846.75,295.42;839.93,294.45;823.36,299.32;817.02,285.68;801.92,279.83;794.12,285.68;793.14,305.17;798.50,335.87;807.28,348.54;815.56,350.98;821.41,350.01;828.23,335.39;830.67,335.87;825.31,361.70;809.23,372.42" occluded="0" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="paper" points="753.23,293.72;745.92,375.59;773.21,386.80;775.65,346.35;799.53,351.71;798.07,380.95;841.93,386.31;857.03,360.97;894.07,366.33;892.12,393.62;938.42,398.01;972.05,401.91;1024.00,420.43;1024.00,346.84;993.00,341.97;962.30,333.19;927.21,331.24;893.10,314.19;867.27,316.62;805.38,298.59" occluded="1" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="chairs" points="947.16,587.07;961.71,590.15;983.71,590.80;988.45,588.46;990.82,524.13;988.11,514.99;982.36,510.28;983.04,503.14;971.53,502.84;970.85,508.90;965.10,518.07;963.41,528.90;952.92,528.53;952.24,537.36;948.52,542.40;946.15,548.53;945.13,583.72" occluded="0" client_id="23" z_order="24">
+    </polygon>
+    <polygon label="bag" points="401.55,598.33;413.48,609.55;438.74,611.66;470.32,616.57;489.27,614.47;494.89,595.52;485.76,585.69;471.03,578.68;474.53,560.43;478.75,547.10;485.76,526.75;481.55,517.62;471.03,517.62;452.78,525.34;424.71,554.12;414.18,567.45" occluded="1" client_id="72" z_order="38">
+    </polygon>
+    <polygon label="binders" points="0.00,536.60;144.84,553.44;178.53,506.28;176.85,494.49;192.85,493.65;192.85,464.18;121.27,456.60;121.27,443.12;0.00,429.65" occluded="0" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="wall" points="732.00,506.50;0.00,516.40;0.00,0.00;734.90,0.00" occluded="1" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="phone" points="135.20,288.48;152.80,284.08;176.15,283.74;188.00,286.11;200.52,298.29;204.58,306.41;198.15,312.51;158.22,313.18;154.49,327.74;149.08,339.58;140.62,344.32;133.17,342.96;126.06,335.52;122.68,323.34;124.71,301.00;129.11,294.23" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="bottle" points="843.61,507.13;849.01,509.71;854.89,511.12;862.17,510.65;864.29,508.77;865.70,453.07;864.05,445.55;860.06,438.97;859.59,434.98;858.18,430.51;853.01,430.28;850.42,436.39;849.95,443.91;845.72,452.37;844.08,483.15" occluded="0" client_id="22" z_order="23">
+    </polygon>
+    <polygon label="wall" points="731.97,508.56;1024.00,696.35;1024.00,0.00;736.18,0.00" occluded="1" client_id="129" z_order="42">
+    </polygon>
+    <polygon label="picture" points="350.48,284.85;382.56,285.66;384.59,343.33;352.51,343.74" occluded="0" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="bag" points="603.28,558.24;608.92,568.11;624.99,577.70;647.27,584.19;673.78,588.70;698.32,591.80;725.96,591.80;759.24,586.72;763.19,564.16;755.57,551.19;747.68,548.65;700.01,545.55;667.30,544.70;648.97,541.60;637.69,533.99;623.58,530.88;615.41,534.27;608.36,542.45;601.59,549.50" occluded="1" client_id="74" z_order="40">
+    </polygon>
+    <polygon label="cubicle" points="0.00,306.00;353.13,312.29;342.88,768.00;0.00,768.00" occluded="1" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="paper" points="168.28,643.66;231.44,647.17;247.58,635.94;280.57,625.41;272.85,617.70;234.25,605.77;201.27,602.96;159.16,642.96" occluded="1" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="keyboard" points="732.26,449.74;755.95,465.98;783.70,460.20;759.67,442.29" occluded="0" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="poster" points="952.86,217.83;947.25,310.46;969.00,316.78;1013.21,323.09;1017.42,217.13" occluded="0" client_id="30" z_order="31">
+    </polygon>
+    <polygon label="floor" points="1024.00,696.18;729.61,505.86;0.00,516.81;0.00,768.00;1024.00,768.00" occluded="1" client_id="113" z_order="41">
+    </polygon>
+    <polygon label="drawer" points="642.12,306.68;710.80,306.20;743.48,313.02;736.50,516.70;670.90,527.40;636.27,508.44" occluded="1" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="chairs" points="443.66,594.40;456.99,602.82;464.71,614.75;480.85,602.82;505.41,596.50;525.06,591.59;533.48,592.99;541.90,599.31;549.62,615.45;553.83,646.33;552.43,737.63;545.41,746.96;536.08,756.36;530.82,763.94;529.06,768.00;288.70,767.40;301.00,751.70;338.95,744.08;367.66,737.07;381.69,699.03;392.22,667.45;402.11,631.17;421.41,603.73;432.57,596.08" occluded="1" client_id="33" z_order="34">
+    </polygon>
+    <polygon label="bottle" points="558.29,230.67;558.69,245.29;561.13,257.48;565.60,274.13;570.06,296.06;572.91,317.99;573.31,343.57;564.38,346.42;556.26,346.01;547.73,345.20;545.29,295.65;547.73,270.07;548.95,248.14;546.51,231.49" occluded="0" client_id="21" z_order="22">
+    </polygon>
+    <polygon label="book" points="943.49,374.51;941.37,380.06;940.39,387.08;955.73,393.94;995.72,393.94;998.00,390.51;997.35,386.59;994.90,382.68" occluded="0" client_id="28" z_order="29">
+    </polygon>
+    <polygon label="corkboard" points="730.25,286.96;1024.00,332.58;1024.00,492.80;727.32,372.93" occluded="1" client_id="19" z_order="20">
+    </polygon>
+    <polygon label="whiteboard" points="382.97,197.74;381.34,335.00;539.10,338.70;542.57,203.02" occluded="0" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="mouse" points="875.45,537.93;882.56,531.16;893.39,529.47;901.51,534.21;904.55,540.30;892.03,543.69;877.82,542.67" occluded="0" client_id="32" z_order="33">
+    </polygon>
+    <polygon label="bag" points="287.20,765.28;298.17,744.17;308.32,718.58;305.07,710.05;326.60,704.77;348.53,689.75;372.08,679.59;391.17,681.22;402.54,692.59;411.48,710.46;409.85,727.11;407.82,744.98;404.57,755.54;394.83,768.00;286.39,768.00" occluded="0" client_id="73" z_order="39">
+    </polygon>
+    <polygon label="chairs" points="779.29,724.35;774.42,768.00;796.76,768.00;796.76,733.28;804.88,728.41;807.72,724.75;839.81,723.13;850.77,720.29;864.98,711.76;870.67,698.36;867.02,684.95;851.99,671.55;843.75,554.55;833.84,525.88;816.29,497.82;794.04,487.30;787.62,490.22;735.56,504.84;734.50,470.48;726.38,445.10;713.54,422.44;703.72,413.30;697.95,412.94;695.59,428.17;697.95,445.79;699.98,477.59;697.14,591.67;701.24,627.33;709.44,653.07;720.53,681.14;736.33,713.30;744.37,723.17;755.74,719.92" occluded="0" client_id="34" z_order="35">
+    </polygon>
+    <polygon label="drawer" points="909.70,381.50;893.07,738.46;934.33,767.93;1024.00,768.00;1024.00,392.34;979.81,378.87" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="keyboard" points="867.63,510.66;884.21,533.67;916.00,529.10;897.07,504.23" occluded="0" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="bottle" points="190.84,722.92;200.10,729.74;215.70,729.74;222.03,726.33;226.90,718.04;225.44,622.53;220.08,608.88;210.34,597.18;208.87,581.59;195.23,581.59;195.23,597.67;189.40,608.40;187.40,623.00;189.38,656.64;189.87,719.02" occluded="0" client_id="20" z_order="21">
+    </polygon>
+    <polygon label="keyboard" points="990.30,596.20;1018.91,576.28;1024.00,578.65;1024.00,609.11" occluded="0" client_id="24" z_order="25">
+    </polygon>
+  </image>
+</annotations>

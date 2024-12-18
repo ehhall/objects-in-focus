@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>145</id>
+      <name>target_coffeeshop</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-02 23:19:33.042483+03:00</created>
+      <updated>2019-05-13 23:57:00.019220+03:00</updated>
+      <source>1 images: target_coffeeshop.png, ...</source>
+      <labels>
+        <label>
+          <name>drinkware</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>kettle</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>wall</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>picture</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>mug</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling_light</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>door</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>coffee_machine</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>shelf</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>counter</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>menu</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>145</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=145</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:31:10.389530+03:00</dumped>
+  </meta>
+  <image id="0" name="target_coffeeshop.png" width="1024" height="768">
+    <polygon label="ceiling_light" points="904.41,0.00;902.38,50.22;891.55,80.68;871.92,103.02;877.34,107.76;915.92,109.79;947.05,103.02;922.69,71.21;917.95,54.28;914.56,44.81;913.89,0.00" occluded="0" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="ceiling_light" points="767.01,0.00;765.66,53.61;754.15,81.36;733.84,106.40;760.92,112.49;795.44,111.14;809.65,105.05;794.08,86.77;787.32,71.88;778.52,46.16;775.13,0.00" occluded="0" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="menu" points="0.00,29.85;172.15,30.92;233.50,30.40;236.35,186.06;106.89,188.20;0.00,186.06" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="coffee_machine" points="151.95,220.25;199.33,220.25;243.33,228.37;235.21,366.45;208.81,373.89;182.41,371.86;182.30,285.00;147.60,284.70;137.80,252.00;139.09,235.14;140.45,227.02" occluded="0" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="mug" points="40.60,348.00;56.01,344.06;86.82,342.98;73.92,372.36;82.88,374.87;78.58,380.61;62.81,383.47;45.60,382.90;39.52,382.04;55.29,374.51" occluded="0" client_id="18" z_order="19">
+    </polygon>
+    <polygon label="coffee_machine" points="521.99,357.65;509.13,522.06;509.13,541.08;525.40,550.30;572.75,549.81;605.70,542.40;596.44,449.70;589.67,344.72;574.11,333.96;574.78,314.94;594.41,291.93;599.15,227.02;560.57,220.93;514.54,226.27;517.25,289.96;538.91,315.62;528.08,339.98" occluded="1" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="wall" points="1024.00,337.69;1024.00,337.69;1024.00,666.77;0.00,658.50;0.00,0.00;1024.00,0.00" occluded="1" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="drinkware" points="371.70,177.00;465.10,175.80;464.54,145.57;372.88,143.69" occluded="1" client_id="34" z_order="22">
+    </polygon>
+    <polygon label="door" points="615.88,121.78;773.25,124.60;770.99,260.53;773.10,544.40;618.70,545.60" occluded="1" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="picture" points="953.20,185.30;1024.00,183.70;1024.00,297.40;951.60,295.80" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="ceiling_light" points="623.86,0.00;622.37,38.85;618.19,49.00;615.80,65.72;592.21,95.88;593.11,99.16;614.90,104.54;642.37,104.54;662.38,100.96;662.08,97.07;654.32,89.01;639.39,66.92;633.72,41.83;633.72,41.83;631.03,35.56;631.92,0.00" occluded="0" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="coffee_machine" points="392.70,277.40;435.64,274.71;483.79,279.16;470.32,319.29;452.58,383.48;471.31,387.05;473.00,437.87;482.20,543.20;400.20,542.20;403.54,486.02;408.00,405.77;415.04,400.42;419.59,385.26;421.29,372.78" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="drinkware" points="491.80,172.83;596.62,175.18;597.09,137.11;493.21,135.23" occluded="0" client_id="32" z_order="20">
+    </polygon>
+    <polygon label="drinkware" points="392.01,83.31;444.11,83.31;449.98,41.40;426.48,35.92;416.30,37.09;388.88,63.34;387.90,83.27" occluded="0" client_id="36" z_order="24">
+    </polygon>
+    <polygon label="mug" points="1.54,345.49;19.81,342.98;47.41,342.62;40.24,358.03;33.43,374.51;33.43,374.51;48.50,375.40;33.80,382.00;24.11,383.11;4.05,380.25;4.05,380.25;15.87,375.59" occluded="1" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="drinkware" points="487.57,47.80;488.51,71.30;597.09,70.83;593.80,56.26;553.37,54.85;525.64,42.63" occluded="1" client_id="33" z_order="21">
+    </polygon>
+    <polygon label="counter" points="0.00,768.00;1024.00,768.00;1024.00,436.22;958.16,438.40;918.20,483.60;416.20,481.90;389.60,438.00;87.92,436.72;0.00,436.05" occluded="1" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="ceiling_light" points="484.42,0.00;479.94,42.73;475.76,50.79;473.67,68.11;449.18,97.07;460.23,102.45;460.23,102.45;486.80,104.54;507.11,103.34;523.23,99.76;522.04,95.88;496.06,66.32;496.96,55.57;493.67,44.52;493.67,44.52;490.39,37.06;490.09,0.00" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="coffee_machine" points="658.84,281.87;776.97,290.06;900.95,291.23;995.68,301.76;993.34,388.31;982.82,472.52;983.99,533.34;986.33,578.95;629.60,568.43;637.78,483.05;621.41,454.98;612.05,391.82;623.75,333.34;638.95,307.61" occluded="0" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="coffee_machine" points="0.00,239.90;57.87,237.85;133.68,242.58;133.00,323.81;132.32,361.71;78.18,380.66;0.00,379.99" occluded="0" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="drinkware" points="373.04,132.52;466.89,131.16;469.13,106.22;414.52,93.98;370.32,104.41" occluded="1" client_id="35" z_order="23">
+    </polygon>
+    <polygon label="picture" points="837.89,116.39;837.89,285.33;946.73,288.58;946.73,121.18" occluded="0" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="shelf" points="402.98,186.73;514.43,188.28;612.47,186.22;612.47,127.39;613.81,26.01;613.81,26.01;611.28,17.44;398.80,17.80;214.10,20.70;212.10,187.20" occluded="1" client_id="3" z_order="4">
+    </polygon>
+  </image>
+</annotations>

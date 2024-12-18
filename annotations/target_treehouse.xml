@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>198</id>
+      <name>target_treehouse</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-06 02:33:51.120706+03:00</created>
+      <updated>2019-05-14 05:49:36.943754+03:00</updated>
+      <source>1 images: target_treehouse.png, ...</source>
+      <labels>
+        <label>
+          <name>bush</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>trees</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>tree</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ladder</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>light</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>walkway</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>treehouse</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>198</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=198</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:39:35.654042+03:00</dumped>
+  </meta>
+  <image id="0" name="target_treehouse.png" width="1024" height="768">
+    <polygon label="walkway" points="575.40,768.00;579.09,534.82;584.70,527.31;593.88,524.50;601.15,526.60;607.04,532.48;679.67,543.28;682.48,539.05;692.60,539.29;693.98,542.60;697.77,667.38;700.79,721.50;694.22,725.25" occluded="1" client_id="25" z_order="17">
+    </polygon>
+    <polygon label="tree" points="186.67,0.00;173.80,143.39;163.28,355.09;160.94,473.81;189.59,473.23;185.50,201.29;198.95,0.12" occluded="1" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="bush" points="1024.00,395.09;956.65,358.60;933.49,368.43;915.95,392.99;833.14,371.23;826.82,381.76;889.28,409.83;899.81,428.08;888.58,462.46;905.42,488.43;890.68,513.69;851.38,507.38;809.98,494.04;765.07,512.99;741.91,545.97;727.17,562.12;725.49,580.36;755.66,603.45;730.54,604.92;713.63,614.75;706.05,624.92;731.38,652.01;759.03,633.98;825.21,665.21;842.75,677.91;846.96,700.01;885.20,768.00;1024.00,768.00" occluded="0" client_id="23" z_order="15">
+    </polygon>
+    <polygon label="tree" points="118.62,0.97;118.13,116.96;105.95,270.96;79.63,401.08;68.42,459.56;101.07,462.97;124.47,237.82;132.75,96.01;134.70,0.00" occluded="1" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="tree" points="253.00,0.00;253.05,205.91;251.29,362.64;248.37,504.16;284.10,504.16;275.27,122.87;273.51,0.00" occluded="1" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="trees" points="1024.00,547.38;554.54,550.19;0.00,556.50;0.00,0.00;1024.00,0.00" occluded="1" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="tree" points="862.00,0.00;854.40,217.26;843.29,467.55;828.09,511.41;795.34,582.17;851.71,604.69;934.52,601.18;947.85,589.95;938.70,326.80;938.73,101.52;934.52,0.00" occluded="1" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="walkway" points="1017.85,697.87;869.51,677.00;777.29,651.05;761.49,628.49;766.85,610.16;818.18,597.47;821.57,572.09;744.57,578.57;680.30,588.70;683.57,595.38;669.70,599.16;636.80,595.90;614.00,584.00;525.50,595.58;481.05,609.60;469.94,630.07;507.36,675.70;664.11,717.22;725.51,745.28;865.87,768.00;1024.00,768.00;1024.00,700.24" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="bush" points="0.00,443.22;122.75,390.59;177.72,399.36;251.41,386.50;214.68,312.46;227.55,299.60;318.78,313.63;381.94,351.64;509.42,356.32;563.23,387.32;633.99,417.14;636.91,469.77;658.55,494.92;627.56,523.58;618.78,563.34;641.59,599.02;630.07,632.47;642.70,676.27;649.43,696.50;716.80,719.25;709.25,756.27;694.11,768.00;0.00,768.00" occluded="0" client_id="24" z_order="16">
+    </polygon>
+    <polygon label="ladder" points="622.09,296.79;617.70,299.71;609.90,324.57;579.69,486.36;563.07,571.84;605.37,576.08;657.76,292.74;657.76,286.21;642.12,285.19;639.19,286.85;637.54,288.65;630.03,296.79" occluded="1" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="tree" points="708.22,0.00;717.49,371.12;709.15,551.17;706.54,583.00;778.37,570.28;771.55,500.14;756.70,130.20;748.48,0.00" occluded="1" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="light" points="681.80,192.64;683.84,203.52;688.20,205.29;692.96,205.29;694.72,204.88;696.22,202.57;696.90,190.46;691.73,188.42;686.84,188.15;682.62,190.46" occluded="0" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="treehouse" points="498.64,255.51;495.72,406.59;538.61,429.00;590.75,425.59;633.39,423.94;704.35,414.87;794.90,402.30;851.43,393.18;852.79,358.00;945.39,365.02;954.01,361.90;954.21,349.76;903.28,345.67;911.86,279.98;915.08,216.87;906.55,139.14;850.50,114.38;784.86,22.61;755.23,44.01;670.09,114.23;622.67,122.42;590.26,122.42;479.10,233.48;467.84,245.72;468.67,255.71" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="walkway" points="696.53,768.00;718.86,720.08;905.50,768.00" occluded="1" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="tree" points="395.48,0.00;383.78,274.91;388.60,330.27;382.12,523.16;416.63,523.99;411.75,288.85;408.49,243.77;413.02,87.87;416.38,0.00" occluded="1" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="tree" points="51.64,0.00;24.57,161.77;0.00,280.90;0.00,459.15;92.40,463.20;115.50,178.80;125.70,0.00" occluded="1" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="tree" points="297.30,482.60;313.76,0.00;324.57,0.00;316.92,245.76;321.40,481.70" occluded="1" client_id="7" z_order="8">
+    </polygon>
+  </image>
+</annotations>

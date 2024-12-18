@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>177</id>
+      <name>target_parkinglot</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-06 02:18:57.712327+03:00</created>
+      <updated>2019-05-14 05:08:17.838924+03:00</updated>
+      <source>1 images: target_parkinglot.png, ...</source>
+      <labels>
+        <label>
+          <name>buildings</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pavement</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>railroad</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>building</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sky</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>car</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pole</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>177</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=177</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:35:20.839340+03:00</dumped>
+  </meta>
+  <image id="0" name="target_parkinglot.png" width="1024" height="768">
+    <polygon label="railroad" points="0.00,290.14;98.48,309.89;136.84,333.58;134.07,363.47;343.33,369.11;384.51,371.37;387.89,326.24;405.38,347.11;402.90,414.90;426.76,424.39;434.70,447.20;436.10,478.10;323.40,486.30;120.37,503.52;0.00,513.39" occluded="0" client_id="21" z_order="22">
+    </polygon>
+    <polygon label="pole" points="349.58,431.67;343.94,419.48;352.20,418.43;360.33,420.01;354.83,430.24;350.90,497.70;350.59,503.48;347.50,503.30;349.41,443.10" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="building" points="805.81,336.21;862.71,313.09;960.07,294.59;1007.67,340.60;1012.02,488.40;897.23,508.80;806.30,502.00" occluded="1" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="car" points="304.95,520.55;319.10,511.57;344.94,506.13;361.53,505.59;386.28,509.13;391.45,517.83;396.62,534.42;396.08,546.39;376.76,558.90;370.78,561.08;300.06,560.54;288.36,551.83;285.10,543.94;284.28,534.69;287.82,529.25" occluded="1" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="pavement" points="0.00,768.00;1024.00,768.00;1024.00,524.87;815.10,513.55;738.70,507.69;665.54,504.06;566.51,485.66;566.91,467.27;487.40,468.10;487.10,486.20;436.35,485.66;436.35,478.19;431.50,478.59;292.05,531.95;21.83,628.96;0.00,638.26" occluded="0" client_id="22" z_order="23">
+    </polygon>
+    <polygon label="car" points="768.96,581.24;753.09,569.21;749.92,556.29;763.52,528.66;785.48,523.35;834.44,525.85;861.64,545.34;887.83,559.48;893.70,568.19;894.17,582.63;879.37,585.71;788.70,584.78" occluded="0" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="pole" points="0.00,293.60;20.00,302.00;0.00,322.35" occluded="0" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="buildings" points="568.56,413.82;592.53,406.30;612.74,385.62;640.94,376.22;686.54,358.83;734.95,351.78;767.85,377.16;807.34,400.66;812.10,512.70;746.70,508.30;666.32,505.01;602.40,492.32;567.62,486.68" occluded="1" client_id="19" z_order="20">
+    </polygon>
+    <polygon label="car" points="353.68,502.18;385.19,500.14;414.43,499.91;418.49,501.27;421.46,504.22;425.52,515.10;427.56,528.25;428.03,534.59;410.58,546.16;355.25,546.16;336.89,546.16;329.63,544.80;318.32,536.63;318.32,531.65;322.86,522.58;334.64,516.46;342.10,510.40;349.38,503.09" occluded="1" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="pole" points="1024.00,305.33;988.68,312.10;983.94,316.16;1002.89,338.49;1008.99,359.48;1019.95,436.71;1024.00,436.37" occluded="0" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="building" points="674.10,427.10;703.45,384.84;809.60,389.54;833.53,416.96;831.30,502.70;747.56,507.64;681.00,504.10" occluded="1" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="pole" points="258.53,393.00;265.14,404.71;265.70,432.48;262.93,531.37;267.60,531.00;273.47,405.35;282.12,393.95;275.70,390.39;265.46,389.87" occluded="0" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="pole" points="707.97,404.54;716.94,419.49;717.26,447.51;717.42,488.13;717.40,500.90;719.02,550.49;719.20,560.71;723.29,560.71;724.26,420.11;732.01,405.94;729.74,404.05;715.39,403.48" occluded="0" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="car" points="634.49,502.33;655.15,500.91;666.41,503.64;683.14,514.13;690.46,516.76;691.88,528.78;673.95,529.66;659.30,529.90;637.30,529.20;630.77,526.16;628.91,520.26;629.90,507.14" occluded="1" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="building" points="809.75,380.90;916.93,370.02;995.43,374.10;1001.69,506.11;912.40,515.10;812.12,513.56" occluded="1" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="car" points="546.56,487.55;564.80,488.64;575.62,493.12;595.30,503.40;595.74,505.69;596.17,510.18;592.02,515.53;553.10,514.11;543.70,510.18;543.92,499.35;544.80,488.64" occluded="0" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="railroad" points="0.00,513.19;414.60,478.40;430.90,479.80;132.46,589.47;0.00,637.73" occluded="0" client_id="20" z_order="21">
+    </polygon>
+    <polygon label="sky" points="0.00,0.00;1024.00,0.00;1024.00,470.50;0.00,464.85" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="car" points="878.15,487.51;973.80,487.29;984.68,500.66;1000.10,517.66;1010.53,524.69;1009.85,537.84;996.47,543.96;906.03,546.00;876.33,537.16;873.61,527.41;872.71,503.15;872.93,494.09" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="car" points="620.12,524.47;647.82,525.43;674.90,527.78;685.60,534.55;696.15,544.15;705.12,546.35;723.70,552.51;728.73,554.23;731.25,565.40;728.42,578.95;710.16,582.26;626.57,579.73;604.38,566.03;601.23,559.28;601.70,547.77;603.75,538.66;612.25,527.64" occluded="0" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="building" points="434.88,433.34;462.31,415.20;486.40,431.40;487.10,486.00;436.70,485.90" occluded="0" client_id="18" z_order="19">
+    </polygon>
+    <polygon label="car" points="204.75,555.15;224.20,548.35;254.43,527.76;273.32,524.17;307.70,520.39;354.73,522.66;361.55,536.22;367.59,547.56;368.90,579.29;357.77,588.36;342.47,591.38;331.51,602.53;319.41,603.28;209.87,601.58;189.05,591.74;185.04,584.15;185.65,574.74;193.64,561.65" occluded="0" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="building" points="939.23,395.09;943.08,516.52;1024.00,525.40;1024.00,368.03;965.05,372.01" occluded="1" client_id="14" z_order="15">
+    </polygon>
+  </image>
+</annotations>

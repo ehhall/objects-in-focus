@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>163</id>
+      <name>target_grassland</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-06 02:09:54.722189+03:00</created>
+      <updated>2019-05-14 04:48:21.096619+03:00</updated>
+      <source>1 images: target_grassland.png, ...</source>
+      <labels>
+        <label>
+          <name>stick</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sign</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>grass</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bridge</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>trees</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>building</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sky</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sink</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>floor</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>vase</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>plant</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>stone</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>163</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=163</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:33:42.149962+03:00</dumped>
+  </meta>
+  <image id="0" name="target_grassland.png" width="1024" height="768">
+    <polygon label="trees" points="0.00,186.87;29.78,200.41;81.67,225.79;144.85,247.78;179.25,254.55;243.55,256.25;316.32,248.91;376.10,226.20;477.07,198.71;547.01,177.84;618.36,135.26;751.31,73.72;849.45,46.65;934.45,20.25;1024.00,0.00;1024.00,285.12;825.82,283.43;680.29,305.43;643.07,313.95;634.61,336.45;649.27,356.25;641.38,387.27;609.79,399.12;552.26,408.14;421.17,425.18;312.59,417.68;110.10,376.61;0.00,360.82" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="bridge" points="543.20,270.60;826.12,286.95;887.46,290.01;884.29,293.64;820.14,297.94;755.99,297.49;711.79,302.48;645.98,320.05;637.10,312.61;621.50,292.41;608.49,285.00;598.40,281.40;584.10,287.00;573.99,298.81;564.92,310.39;556.72,329.79;552.12,330.00;552.82,280.06;535.55,279.63" occluded="0" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="stick" points="195.76,611.80;195.08,585.73;191.22,557.40;189.86,548.56;193.94,528.38;201.88,530.88;199.16,546.74;200.07,561.03;202.11,573.04;204.83,598.88;203.24,612.25" occluded="0" client_id="13" z_order="9">
+    </polygon>
+    <polygon label="sign" points="36.10,391.10;50.27,396.34;50.14,419.56;36.10,414.32" occluded="0" client_id="14" z_order="10">
+    </polygon>
+    <polygon label="building" points="777.98,380.84;779.79,355.68;789.99,334.82;878.40,340.26;879.30,357.95;870.50,393.10" occluded="1" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="plant" points="583.67,515.08;553.51,480.97;548.42,448.49;573.88,424.17;601.69,419.12;614.22,429.26;624.01,453.59;629.11,472.35;624.80,493.50;617.75,509.56" occluded="0" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="sky" points="0.00,0.00;1024.00,0.00;1024.00,270.30;0.00,271.40" occluded="1" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="plant" points="727.68,453.74;696.17,449.89;684.38,445.81;679.17,437.42;685.52,430.39;705.24,411.80;730.17,401.38;737.88,403.87;748.99,426.08;745.13,440.14;738.33,449.43" occluded="0" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="grass" points="0.00,768.00;1024.00,768.00;1024.00,285.58;839.15,282.95;806.21,286.39;643.51,314.07;634.21,336.10;649.78,355.91;641.89,386.43;611.58,398.76;425.84,424.02;330.45,418.36;294.27,414.12;123.89,379.56;0.00,360.16" occluded="1" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="plant" points="781.63,435.38;762.36,425.18;753.52,418.15;748.76,401.15;753.29,390.95;763.95,386.42;778.68,379.62;796.13,381.20;810.64,387.55;826.96,394.12;827.19,415.20;820.62,426.99;802.48,434.93" occluded="0" client_id="4" z_order="5">
+    </polygon>
+  </image>
+</annotations>

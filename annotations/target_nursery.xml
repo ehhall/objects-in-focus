@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>175</id>
+      <name>target_nursery</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-06 02:17:46.890369+03:00</created>
+      <updated>2019-05-14 05:06:33.879090+03:00</updated>
+      <source>1 images: target_nursery.png, ...</source>
+      <labels>
+        <label>
+          <name>books</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>lamp</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>basket</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>table</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pillow</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>chair</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>painting</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>curtain</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>wall</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>shelf</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>book</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>decoration</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>crib</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>clock</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>plant</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>picture</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>floor</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ottoman</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>175</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=175</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:35:04.495673+03:00</dumped>
+  </meta>
+  <image id="0" name="target_nursery.png" width="1024" height="768">
+    <polygon label="decoration" points="663.50,164.94;663.98,138.78;669.62,118.62;702.26,114.67;711.14,115.75;710.30,135.42;716.18,135.67;715.70,158.47" occluded="1" client_id="27" z_order="28">
+    </polygon>
+    <polygon label="curtain" points="939.41,0.00;902.75,514.65;895.93,551.16;937.88,566.36;998.59,587.51;1024.00,590.80;1024.00,0.00" occluded="0" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="pillow" points="617.36,437.09;614.69,424.50;609.49,384.20;619.25,385.46;632.48,390.50;642.24,394.75;646.96,399.00;659.55,390.34;670.73,383.26;680.49,379.95;681.21,386.85;682.82,410.44;687.13,432.13;692.53,443.67;616.33,449.89" occluded="1" client_id="19" z_order="20">
+    </polygon>
+    <polygon label="picture" points="819.34,96.19;862.22,88.63;857.88,123.39;854.48,142.66;811.79,147.94" occluded="1" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="shelf" points="751.21,342.96;847.17,352.01;864.77,347.61;864.22,354.28;871.78,354.60;874.07,346.29;874.18,328.13;871.23,327.15;866.21,327.06;865.32,327.93;863.90,336.56;820.29,334.59;724.53,327.70;690.40,325.80;669.40,335.50" occluded="1" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="decoration" points="698.07,207.52;712.89,207.14;716.70,209.62;717.35,214.75;716.56,225.90;712.63,247.29;699.51,247.29;698.99,240.45;699.77,230.61;694.60,228.40;694.00,216.33;694.26,207.92" occluded="1" client_id="28" z_order="29">
+    </polygon>
+    <polygon label="shelf" points="648.30,253.20;869.83,252.72;870.37,260.34;872.82,261.43;876.36,261.43;878.80,257.89;879.89,232.87;871.46,232.87;870.92,242.11;666.09,245.92;648.68,247.55" occluded="1" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="ceiling" points="629.65,0.00;800.24,0.00;648.38,41.48;516.92,0.00" occluded="0" client_id="18" z_order="19">
+    </polygon>
+    <polygon label="plant" points="817.49,449.77;814.97,442.29;816.13,434.81;835.85,423.25;850.79,427.78;858.27,435.72;859.42,448.64;856.93,457.93;853.05,476.07;839.70,477.65;830.84,477.43;827.67,476.29;826.08,461.11;826.08,453.85" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="wall" points="648.85,40.81;801.84,0.00;1024.00,0.00;1024.00,585.43;653.08,473.48" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="basket" points="728.56,332.35;740.25,335.75;756.31,335.37;771.82,334.61;773.12,332.91;781.07,283.04;769.53,280.21;745.90,280.10;730.50,281.10;724.38,282.67" occluded="1" client_id="23" z_order="24">
+    </polygon>
+    <polygon label="table" points="880.91,487.72;876.58,501.32;870.92,586.78;785.30,588.20;758.10,557.60;760.60,459.20;845.01,459.02" occluded="1" client_id="21" z_order="22">
+    </polygon>
+    <polygon label="wall" points="0.00,729.43;653.00,473.70;649.28,41.05;516.84,0.00;0.00,0.00" occluded="1" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="lamp" points="535.46,260.25;561.75,250.27;595.98,250.95;597.57,252.09;600.29,269.77;561.07,268.63;558.58,273.62;556.99,274.30;550.87,265.46;544.75,261.83;537.27,264.55;535.00,312.84;534.19,429.55;534.48,475.05;529.38,475.84;528.20,335.62;527.82,298.40;528.41,279.63;530.95,265.46" occluded="1" client_id="56" z_order="30">
+    </polygon>
+    <polygon label="plant" points="677.91,239.44;677.71,220.54;674.71,212.24;672.61,209.44;674.71,203.74;680.01,201.14;686.21,199.44;692.91,199.54;696.61,201.24;696.91,207.34;694.71,215.84;692.51,220.14;692.41,239.54;690.11,240.74;679.91,240.84" occluded="1" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="ottoman" points="686.49,563.43;730.67,546.98;749.94,547.45;787.55,554.03;804.94,563.90;832.20,589.29;834.55,635.35;818.10,685.69;792.25,700.73;776.74,705.90;722.21,690.86;692.13,673.42;680.85,658.38;677.37,613.54;681.22,575.00" occluded="0" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="clock" points="779.70,477.60;786.21,469.72;780.80,465.92;778.60,462.22;778.80,455.52;781.41,444.02;786.41,439.92;801.01,439.42;807.10,443.82;809.01,448.62;810.21,453.42;810.10,460.32;808.71,465.72;802.60,471.42;807.10,477.42" occluded="0" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="basket" points="784.47,337.64;795.43,339.90;806.76,341.22;814.87,341.04;830.54,339.71;846.24,278.89;788.06,275.30;779.18,277.00" occluded="0" client_id="22" z_order="23">
+    </polygon>
+    <polygon label="basket" points="668.24,280.88;672.14,298.58;674.85,331.22;695.90,333.10;714.57,329.78;722.61,275.42;666.93,274.82" occluded="1" client_id="24" z_order="25">
+    </polygon>
+    <polygon label="painting" points="137.23,35.08;432.79,85.28;437.30,314.00;416.26,317.22;160.98,338.31;155.34,336.62;127.98,36.55" occluded="0" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="crib" points="154.31,407.15;453.26,358.26;568.89,378.94;569.83,569.78;545.71,580.17;549.99,614.24;536.36,617.44;530.25,610.86;525.55,592.58;317.32,689.36;311.35,736.31;292.18,745.57;284.47,738.99;287.94,702.00;255.98,716.62;174.24,618.90" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="decoration" points="734.72,196.21;772.31,193.75;783.26,208.11;787.80,215.29;788.74,223.79;781.19,243.43;779.70,247.00;724.89,247.97;719.60,237.95;725.65,228.51;731.51,228.13" occluded="0" client_id="25" z_order="26">
+    </polygon>
+    <polygon label="picture" points="779.97,465.46;825.20,465.70;826.30,403.20;777.71,404.03" occluded="1" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="floor" points="0.00,729.25;0.00,768.00;1024.00,768.00;1024.00,584.60;652.70,473.60;511.20,530.80" occluded="1" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="shelf" points="649.13,166.99;860.78,141.65;877.78,143.69;878.46,135.98;885.79,135.17;884.61,164.82;876.74,166.52;875.70,155.64;705.92,172.07;680.19,174.34;680.19,184.74;674.68,184.83;674.68,176.04;648.91,174.54" occluded="0" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="books" points="799.60,200.60;847.32,200.14;845.70,245.60;834.41,245.47;799.30,246.10" occluded="0" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="decoration" points="713.20,158.31;709.23,144.90;724.46,128.47;745.56,127.58;746.67,113.62;749.47,108.63;755.27,105.33;760.67,106.42;766.58,108.73;786.29,116.13;802.47,121.86;810.14,125.71;815.19,125.71;827.07,127.75;829.47,128.58;830.79,131.11;831.39,145.15" occluded="0" client_id="26" z_order="27">
+    </polygon>
+    <polygon label="chair" points="578.52,540.59;610.95,588.53;761.37,572.55;770.30,458.80;767.01,433.00;754.36,424.11;715.82,424.87;710.93,417.68;707.88,372.18;711.97,356.38;710.60,320.99;707.41,318.73;650.53,322.59;600.05,324.42;581.01,324.18;574.06,325.74;571.00,486.82;572.69,531.89" occluded="1" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="pillow" points="631.53,476.67;712.92,470.81;716.55,468.89;719.31,464.23;720.52,454.74;720.01,444.87;713.96,434.33;685.27,435.54;630.67,438.31;626.52,440.38;622.89,446.43;622.55,455.26;622.89,466.32;625.83,474.09" occluded="0" client_id="20" z_order="21">
+    </polygon>
+    <polygon label="plant" points="692.01,239.34;695.01,240.14;701.01,240.44;702.31,239.24;703.31,224.94;704.21,213.34;691.50,213.80;692.31,225.34" occluded="0" client_id="6" z_order="7">
+    </polygon>
+  </image>
+</annotations>

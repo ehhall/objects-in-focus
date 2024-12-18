@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>200</id>
+      <name>target_warehouse</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-06 02:35:08.283650+03:00</created>
+      <updated>2019-05-14 21:48:05.637301+03:00</updated>
+      <source>1 images: target_warehouse.png, ...</source>
+      <labels>
+        <label>
+          <name>bags</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>boxes</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>wall</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>dolly</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>shelf</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>box</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling_light</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>ceiling</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bag</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>floor</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>200</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=200</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:39:49.684444+03:00</dumped>
+  </meta>
+  <image id="0" name="target_warehouse.png" width="1024" height="768">
+    <polygon label="ceiling_light" points="787.74,183.19;784.48,185.09;784.34,188.49;787.88,189.58;893.04,183.96;895.32,183.31;895.65,178.09;891.57,177.60" occluded="0" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="boxes" points="498.43,150.20;499.37,204.96;581.16,206.84;747.60,281.67;872.70,336.10;873.03,301.18;825.06,273.28;771.36,239.32;727.65,203.20;692.75,174.03;661.58,168.67;582.26,119.55;555.99,122.99;538.03,130.32;529.88,144.68" occluded="0" client_id="31" z_order="32">
+    </polygon>
+    <polygon label="shelf" points="194.60,515.54;302.61,524.57;614.70,476.80;617.10,304.20;306.62,248.94;198.57,257.88" occluded="1" client_id="20" z_order="21">
+    </polygon>
+    <polygon label="boxes" points="65.16,544.66;122.15,552.49;185.41,542.90;180.32,486.49;156.40,458.30;139.60,447.70;86.30,451.40;81.61,480.81;72.01,499.42;65.94,508.62" occluded="0" client_id="25" z_order="26">
+    </polygon>
+    <polygon label="ceiling_light" points="344.27,134.50;351.89,140.21;389.97,134.77;444.10,126.20;445.87,116.41;356.92,128.24;344.41,130.15" occluded="1" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="boxes" points="432.84,565.51;463.39,571.15;484.54,569.50;497.23,572.56;523.79,574.91;537.89,576.08;582.08,570.44;651.64,555.17;653.76,501.35;638.48,489.83;604.64,448.94;577.84,440.01;566.56,440.24;557.87,468.68;503.58,469.62;482.66,475.96;445.29,475.96;427.20,478.55;429.08,516.62;433.31,528.14" occluded="0" client_id="34" z_order="35">
+    </polygon>
+    <polygon label="ceiling_light" points="593.97,120.46;703.23,98.02;707.42,97.68;717.51,108.44;714.45,110.14;611.87,131.34;606.55,132.58;602.13,132.47;592.83,125.44;591.70,122.16" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="boxes" points="663.63,463.98;658.69,474.08;653.33,600.45;767.32,611.50;792.30,595.00;793.17,463.20" occluded="1" client_id="23" z_order="24">
+    </polygon>
+    <polygon label="shelf" points="391.56,556.58;398.67,558.95;470.76,565.38;825.40,493.53;825.90,290.00;468.89,198.08;398.81,202.79;394.81,347.09" occluded="1" client_id="18" z_order="19">
+    </polygon>
+    <polygon label="ceiling_light" points="701.73,183.17;755.43,174.36;782.36,169.46;786.27,172.23;789.37,176.15;787.58,178.76;734.21,187.58;707.77,191.49;705.00,191.33;701.57,187.41;700.59,184.80" occluded="1" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="boxes" points="0.19,483.46;5.59,480.17;10.06,456.43;14.29,451.73;38.70,436.90;79.39,435.75;83.15,437.63;95.61,463.72;107.59,492.63;113.56,531.48;43.06,539.23;0.00,543.01" occluded="1" client_id="39" z_order="40">
+    </polygon>
+    <polygon label="ceiling_light" points="422.31,11.16;462.07,0.00;551.57,0.00;526.11,8.03;447.77,29.38;423.68,15.08" occluded="0" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="boxes" points="209.35,200.42;258.64,192.26;264.02,192.26;294.84,198.15;290.33,261.05;256.78,264.15;205.72,266.13;202.90,263.58;206.00,208.60" occluded="1" client_id="41" z_order="42">
+    </polygon>
+    <polygon label="shelf" points="485.22,563.17;563.91,575.30;874.80,505.40;877.58,332.99;569.38,183.85;491.12,193.81" occluded="1" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="ceiling_light" points="851.36,242.27;918.46,241.71;921.06,242.61;920.61,244.54;917.21,245.90;850.00,247.15;846.15,246.92;845.24,245.56;845.69,243.29;849.09,242.50" occluded="1" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="boxes" points="1024.00,469.95;431.88,471.12;0.00,473.93;0.00,201.20;511.60,288.10;783.87,251.12;909.90,235.33;1024.00,224.16" occluded="1" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="floor" points="0.00,762.52;1024.00,768.00;1024.00,470.02;554.20,471.40;154.01,473.30;0.00,473.91" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="boxes" points="196.20,419.00;252.39,419.93;271.66,424.87;286.00,427.93;298.45,425.34;380.71,426.52;379.77,405.83;376.95,395.26;331.12,386.56;226.30,388.21;196.90,388.40" occluded="0" client_id="43" z_order="44">
+    </polygon>
+    <polygon label="boxes" points="0.00,508.92;19.39,508.43;28.86,510.06;28.04,534.54;46.81,533.24;59.86,533.72;59.18,588.27;0.00,597.87" occluded="0" client_id="24" z_order="25">
+    </polygon>
+    <polygon label="boxes" points="727.51,629.11;871.91,645.19;900.96,616.42;900.39,466.67;806.76,466.58;738.37,471.26" occluded="0" client_id="22" z_order="23">
+    </polygon>
+    <polygon label="boxes" points="410.40,117.10;491.33,106.10;521.11,122.00;518.41,204.58;482.87,206.27;410.45,211.35;409.43,152.80" occluded="1" client_id="35" z_order="36">
+    </polygon>
+    <polygon label="shelf" points="0.00,218.63;87.55,236.56;86.20,330.31;86.77,533.97;0.00,543.28" occluded="1" client_id="19" z_order="20">
+    </polygon>
+    <polygon label="ceiling_light" points="111.05,166.44;191.18,155.67;201.14,158.61;200.98,160.24;175.68,163.67;122.80,172.48;116.43,173.62;112.68,172.64;110.39,171.83;104.85,167.75" occluded="0" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="boxes" points="202.63,335.21;311.50,338.32;422.61,352.98;421.20,294.32;359.16,285.58;251.14,287.55;204.33,292.06" occluded="1" client_id="42" z_order="43">
+    </polygon>
+    <polygon label="dolly" points="336.90,535.07;345.36,546.82;408.11,551.29;437.02,542.12;443.60,520.73;442.90,465.50;430.91,457.51;417.51,456.57;413.75,457.75;411.17,458.92;406.23,516.74;342.31,525.91;336.90,527.32" occluded="1" client_id="21" z_order="22">
+    </polygon>
+    <polygon label="ceiling_light" points="282.59,190.35;359.37,173.50;376.80,179.77;376.40,182.12;301.00,198.77" occluded="0" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="box" points="929.75,217.30;1007.59,215.61;1008.44,309.24;897.60,311.78;901.27,256.50;922.42,242.40" occluded="0" client_id="29" z_order="30">
+    </polygon>
+    <polygon label="boxes" points="262.40,260.76;313.63,259.11;432.50,280.70;435.40,239.90;386.40,211.50;321.86,191.66;261.46,199.41;258.17,202.00;260.52,217.28" occluded="1" client_id="40" z_order="41">
+    </polygon>
+    <polygon label="ceiling" points="0.00,0.00;1024.00,0.00;1024.00,223.66;773.43,252.04;511.64,287.98;252.62,244.47;0.00,201.11" occluded="1" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="boxes" points="905.77,64.20;1024.00,48.53;1024.00,165.26;968.24,169.96;898.91,176.81;891.08,173.68;887.16,160.75;883.83,141.36;883.44,102.00;882.66,74.58;884.23,70.66;890.69,64.20" occluded="0" client_id="26" z_order="27">
+    </polygon>
+    <polygon label="box" points="391.83,395.75;466.09,395.28;494.53,397.16;491.94,423.95;460.69,423.72;390.89,423.01" occluded="1" client_id="37" z_order="38">
+    </polygon>
+    <polygon label="boxes" points="496.40,304.30;561.40,307.50;871.85,376.96;872.25,345.32;646.86,249.84;591.22,260.04;577.01,268.16;533.55,264.91;497.82,267.75" occluded="0" client_id="32" z_order="33">
+    </polygon>
+    <polygon label="boxes" points="482.75,423.38;556.66,427.44;638.70,430.28;677.68,431.50;677.68,412.00;645.60,364.08;602.96,353.12;583.87,353.93;550.57,361.65;507.52,360.83;503.46,361.24;500.42,384.79;487.87,385.93;483.44,388.86;479.70,398.81;479.05,418.42;478.89,423.29" occluded="0" client_id="33" z_order="34">
+    </polygon>
+    <polygon label="dolly" points="920.19,613.71;967.29,617.10;991.82,610.89;986.18,585.79;982.80,486.24;976.93,475.15;968.33,471.94;937.11,472.84;931.22,475.55;926.54,481.64;925.32,498.96" occluded="0" client_id="30" z_order="31">
+    </polygon>
+    <polygon label="shelf" points="896.88,156.78;896.18,174.41;897.78,335.26;901.44,608.98;1024.00,621.77;1024.00,140.97" occluded="1" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="boxes" points="401.11,244.38;481.65,236.60;534.11,248.44;530.72,311.39;479.96,303.94;400.77,309.02" occluded="1" client_id="36" z_order="37">
+    </polygon>
+    <polygon label="ceiling_light" points="755.19,227.44;807.10,220.07;828.41,216.44;831.70,217.01;834.42,220.07;833.40,223.13;807.33,226.53;760.18,234.35;757.12,234.58;754.06,232.20;752.36,229.59;753.04,227.89" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="boxes" points="914.10,431.19;1005.81,433.56;1006.49,317.14;965.88,317.48;965.88,333.39;896.84,335.76;899.21,430.18" occluded="0" client_id="28" z_order="29">
+    </polygon>
+    <polygon label="ceiling_light" points="169.26,245.14;232.16,240.74;235.36,242.24;235.36,243.44;233.16,244.74;199.36,247.64;167.86,250.44;166.06,249.54;165.06,248.74;166.06,246.74" occluded="0" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="bags" points="0.00,77.89;40.52,88.47;77.93,100.22;81.26,106.88;87.33,152.12;84.39,204.60;89.29,227.52;88.10,236.90;0.00,217.14" occluded="0" client_id="27" z_order="28">
+    </polygon>
+    <polygon label="boxes" points="205.72,513.52;298.89,523.59;346.76,517.60;344.04,469.73;325.27,445.52;297.54,432.97;236.20,432.15;226.25,449.67;223.73,479.90;223.96,490.10;204.41,491.54;204.28,501.02" occluded="0" client_id="44" z_order="45">
+    </polygon>
+    <polygon label="ceiling_light" points="846.26,248.53;929.69,247.36;930.48,239.91;844.70,241.48" occluded="0" client_id="84" z_order="46">
+    </polygon>
+    <polygon label="ceiling_light" points="672.27,78.78;675.37,90.70;838.58,70.95;840.54,69.15;837.77,57.73" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="box" points="366.07,521.04;420.59,526.92;444.09,521.51;444.09,491.90;400.62,487.43;378.76,489.08;366.77,494.48" occluded="1" client_id="38" z_order="39">
+    </polygon>
+    <polygon label="ceiling_light" points="80.56,119.73;143.88,98.19;174.73,109.94;171.47,112.22;92.15,137.52;86.92,136.70;61.79,127.40" occluded="1" client_id="6" z_order="7">
+    </polygon>
+  </image>
+</annotations>

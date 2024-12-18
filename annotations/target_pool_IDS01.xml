@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>24</id>
+      <name>cap</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-01-31 00:20:22.878930+03:00</created>
+      <updated>2019-05-11 01:28:05.626349+03:00</updated>
+      <source>1 images: cap.jpg, ...</source>
+      <labels>
+        <label>
+          <name>grass</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>napkin</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>table</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pool</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>drink</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>railing</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>poolside</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>building</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>plant</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>hat</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>utensil</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>door</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pillar</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>watermelon</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>light</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>chair</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>walkway</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>towel</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>plate</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>24</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=24</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-07-15 21:56:52.393956+03:00</dumped>
+  </meta>
+  <image id="0" name="cap.jpg" width="1024" height="768">
+    <polygon label="light" points="504.17,244.02;508.87,244.96;511.45,249.90;512.39,254.60;510.80,262.30;511.50,301.40;508.63,303.25;504.40,302.54;502.05,301.60;501.35,298.31;500.40,262.40;499.20,254.10;498.50,248.50;500.41,245.90" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="railing" points="385.58,194.83;394.69,200.81;405.57,211.83;410.20,218.90;409.93,225.84;405.85,231.69;397.14,231.82;392.11,232.10;390.88,234.41;390.88,237.26;390.48,241.07;378.50,241.30;378.40,222.40;378.24,207.75;378.78,197.96;381.77,195.37" occluded="1" client_id="31" z_order="32">
+    </polygon>
+    <polygon label="pillar" points="385.97,0.00;390.88,203.30;418.25,205.41;411.24,0.00" occluded="1" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="plate" points="827.12,663.56;861.64,667.96;888.04,666.94;911.73,660.85;928.65,649.68;930.00,638.18;912.41,628.02;885.67,623.29;859.27,620.92;833.89,622.27;806.14,628.02;792.94,636.15;788.54,644.94;794.63,652.73;807.00,658.10" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="railing" points="947.27,202.73;949.39,210.48;949.86,218.95;950.56,230.93;950.09,240.10;950.09,250.67;950.09,253.49;944.92,253.73;943.98,246.91;939.75,242.21;937.17,236.34;936.93,230.23;937.17,220.36;941.87,209.78" occluded="0" client_id="30" z_order="31">
+    </polygon>
+    <polygon label="light" points="899.00,192.60;904.60,192.90;906.27,219.39;900.50,219.00;900.00,203.00;899.17,197.09" occluded="0" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="pillar" points="113.69,0.00;121.41,229.27;141.06,229.97;133.34,0.00" occluded="0" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="towel" points="925.77,472.29;946.12,467.38;969.28,495.45;980.51,527.73;987.53,550.89;992.44,561.41;1024.00,576.15;1024.00,434.40;967.88,448.43;932.09,461.76" occluded="0" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="pillar" points="895.85,0.00;901.70,216.90;923.60,216.90;916.90,0.00" occluded="0" client_id="18" z_order="19">
+    </polygon>
+    <polygon label="drink" points="726.61,640.41;739.47,634.32;760.11,633.98;770.94,636.35;775.00,639.06;776.70,696.25;767.90,701.67;756.05,703.36;743.87,703.70;736.08,703.02;728.98,699.30;726.27,696.59" occluded="0" client_id="34" z_order="35">
+    </polygon>
+    <polygon label="hat" points="855.56,596.72;875.79,597.05;894.89,592.48;904.52,587.09;910.39,577.30;917.09,537.64;919.86,517.40;918.88,490.15;904.36,472.52;877.10,464.52;863.55,467.95;850.50,480.36;840.87,489.50;832.05,503.53;829.93,517.73;831.07,529.32;834.34,536.17;838.91,542.37;842.66,545.97;844.46,548.74;843.64,563.59;842.66,579.26;842.66,586.11;847.40,591.99" occluded="0" client_id="23" z_order="24">
+    </polygon>
+    <polygon label="plant" points="615.20,241.70;628.10,239.20;642.40,238.50;660.05,230.44;667.34,229.50;672.04,237.25;672.75,243.13;670.16,250.88;671.10,258.64;670.40,265.46;667.11,270.63;666.87,319.98;618.69,320.45;617.28,294.60;616.58,275.09;615.17,264.75;612.11,256.52;606.20,251.40;607.00,245.90" occluded="0" client_id="24" z_order="25">
+    </polygon>
+    <polygon label="plant" points="995.33,226.68;1013.67,217.28;1024.00,211.87;1024.00,306.11;991.10,304.94;988.05,302.12;988.52,256.05;993.92,253.23;992.98,249.00;987.11,245.95;980.60,241.20;986.20,235.90;990.63,237.72" occluded="0" client_id="25" z_order="26">
+    </polygon>
+    <polygon label="towel" points="501.47,206.49;510.72,199.96;515.34,204.99;513.98,210.70;510.18,218.05;507.59,226.34;505.69,232.74;504.46,235.05;497.53,236.14;492.77,235.59;490.32,235.05;494.13,228.11;496.30,220.22;498.48,214.24;499.70,209.61" occluded="0" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="light" points="740.92,287.77;751.07,291.02;753.91,297.93;754.32,309.30;753.51,388.49;744.17,389.71;738.48,387.68;736.45,313.36;734.82,297.11;737.26,291.02" occluded="0" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="walkway" points="749.63,277.20;965.80,670.00;1024.00,654.70;1024.00,380.90;873.84,275.79" occluded="1" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="poolside" points="1024.00,611.24;722.96,657.56;495.59,709.49;332.99,768.00;1024.00,768.00" occluded="1" client_id="40" z_order="41">
+    </polygon>
+    <polygon label="door" points="684.00,101.10;764.58,100.07;767.60,194.30;686.06,196.19" occluded="0" client_id="21" z_order="22">
+    </polygon>
+    <polygon label="pillar" points="0.00,85.49;6.05,87.11;10.92,248.34;0.00,249.96" occluded="0" client_id="20" z_order="21">
+    </polygon>
+    <polygon label="chair" points="255.91,234.66;259.34,213.12;285.13,207.73;301.61,220.46;318.09,232.38;343.23,233.85;379.30,234.01;391.21,235.31;402.64,241.19;400.84,275.14;396.27,275.95;365.91,279.38;345.02,282.48;307.32,285.58;293.12,286.07;256.89,286.40" occluded="1" client_id="32" z_order="33">
+    </polygon>
+    <polygon label="pillar" points="45.04,93.61;48.29,239.40;73.87,241.03;68.59,92.80" occluded="0" client_id="19" z_order="20">
+    </polygon>
+    <polygon label="chair" points="921.17,471.01;881.69,480.76;878.77,515.85;903.10,593.30;954.40,704.45;982.18,768.00;1024.00,768.00;1024.00,432.90" occluded="1" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="grass" points="0.00,285.62;229.60,281.40;200.14,304.57;614.89,296.15;604.36,322.81;1024.00,307.37;1024.00,768.00;0.00,768.00" occluded="1" client_id="69" z_order="42">
+    </polygon>
+    <polygon label="pillar" points="249.13,0.00;256.15,228.57;284.22,229.97;266.67,0.00" occluded="1" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="utensil" points="875.43,641.77;886.00,634.95;895.17,627.90;905.98,616.62;910.92,618.50;896.81,634.01;890.94,644.36;888.59,650.70;882.01,654.70;876.13,649.53;872.37,645.30" occluded="0" client_id="22" z_order="23">
+    </polygon>
+    <polygon label="watermelon" points="821.17,628.01;835.86,622.79;854.63,622.13;866.87,622.46;867.03,636.82;883.35,638.62;903.75,638.95;907.83,650.21;907.51,655.59;879.27,659.51;868.01,660.16;855.12,658.69;844.02,655.59;832.76,653.14;824.11,647.76;820.68,642.05;818.07,636.33;817.09,631.93" occluded="1" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="pillar" points="775.68,0.00;781.57,199.25;799.26,202.61;795.89,0.00" occluded="0" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="drink" points="980.26,613.44;1007.34,612.42;1021.55,618.85;1022.23,672.32;1008.69,676.39;993.46,676.72;984.32,675.37;977.21,673.34;973.83,671.31;973.15,655.06;973.49,625.28;973.15,617.50" occluded="0" client_id="35" z_order="36">
+    </polygon>
+    <polygon label="napkin" points="714.39,690.92;722.01,710.64;764.31,710.23;797.76,700.30;790.83,692.96;787.97,683.30;784.44,680.17" occluded="1" client_id="38" z_order="39">
+    </polygon>
+    <polygon label="plant" points="0.00,334.74;49.26,341.06;57.69,358.60;88.56,362.11;128.56,355.09;122.25,418.96;82.95,438.60;87.16,463.87;92.07,491.24;44.35,494.75;34.53,522.11;71.72,544.57;104.00,549.48;139.09,527.73;170.67,494.04;208.57,482.82;236.64,493.34;249.97,538.26;216.28,567.73;195.23,592.99;168.56,613.34;135.58,628.08;109.62,634.40;61.19,654.05;14.88,665.28;0.00,665.98;0.00,695.45;38.74,701.77;78.04,717.21;104.00,725.63;121.55,734.75;134.18,758.61;130.11,768.00;0.00,768.00" occluded="0" client_id="26" z_order="27">
+    </polygon>
+    <polygon label="pillar" points="524.13,97.66;537.78,97.66;543.14,207.31;526.57,208.29" occluded="0" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="pool" points="1024.00,246.30;336.51,268.10;389.06,248.90;1024.00,235.20" occluded="1" client_id="36" z_order="37">
+    </polygon>
+    <polygon label="chair" points="89.97,670.19;293.48,608.43;405.06,581.06;450.67,574.75;471.73,621.77;485.06,665.28;754.54,725.63;762.96,742.47;759.45,754.40;737.28,768.00;124.60,768.00;116.84,735.24;111.79,714.68;97.41,713.28;83.58,707.87;80.21,698.05;80.21,685.35" occluded="1" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="chair" points="451.92,46.81;478.69,45.34;491.09,66.07;491.58,84.35;460.90,84.80;459.27,72.43;454.21,56.44;449.31,48.28" occluded="0" client_id="70" z_order="43">
+    </polygon>
+    <polygon label="light" points="178.50,211.70;187.20,211.90;185.67,236.68;180.37,236.78" occluded="0" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="napkin" points="955.70,660.20;960.65,667.99;981.21,674.65;998.25,680.72;1024.00,676.02;1024.00,665.64;982.39,651.73;955.00,654.10" occluded="1" client_id="39" z_order="40">
+    </polygon>
+    <polygon label="building" points="0.00,0.00;1024.00,0.00;1024.00,223.81;126.50,228.70;0.00,232.25" occluded="1" client_id="27" z_order="28">
+    </polygon>
+    <polygon label="poolside" points="0.00,284.85;231.72,282.74;198.74,293.27;200.14,306.60;612.08,295.37;609.27,322.04;1024.00,313.62;1024.00,208.35;839.45,216.78;769.28,195.72;682.26,195.02;549.62,206.95;414.88,207.65;364.36,210.46;336.99,224.50;319.44,228.71;134.88,230.81;130.67,225.20;91.37,221.69;35.93,225.90;0.00,230.11" occluded="1" client_id="28" z_order="29">
+    </polygon>
+    <polygon label="chair" points="440.01,191.29;464.11,187.69;475.61,198.69;481.71,205.39;492.01,207.09;507.41,206.49;535.41,205.89;535.81,217.09;521.91,231.79;505.21,232.79;465.81,232.89;443.21,232.39;442.91,216.09;443.31,206.49;442.61,198.99;437.81,194.89" occluded="1" client_id="33" z_order="34">
+    </polygon>
+    <polygon label="table" points="631.03,692.64;833.14,625.27;1024.00,661.06;1024.00,727.73;926.19,768.00;858.10,768.00;630.61,716.79" occluded="1" client_id="37" z_order="38">
+    </polygon>
+    <polygon label="light" points="322.07,205.78;328.41,205.63;329.27,232.56;323.08,232.70" occluded="0" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="railing" points="897.90,203.00;900.27,217.06;901.68,233.99;901.21,254.43;897.92,254.67;894.63,244.33;892.28,235.63;892.50,225.30;895.10,215.65" occluded="0" client_id="29" z_order="30">
+    </polygon>
+    <polygon label="chair" points="536.30,45.01;562.25,44.52;566.80,44.70;562.42,57.91;562.09,66.72;562.58,82.88;547.40,82.55;527.16,82.22;520.96,82.55;522.10,71.94;526.84,67.21;530.75,61.82;533.37,56.44;534.51,48.77" occluded="0" client_id="71" z_order="44">
+    </polygon>
+    <polygon label="towel" points="263.50,212.20;285.55,208.23;301.77,227.73;321.27,235.02;308.82,237.61;295.19,240.66;284.84,241.84;277.32,242.54;269.10,233.38;265.34,225.62;262.52,218.80" occluded="1" client_id="3" z_order="4">
+    </polygon>
+  </image>
+</annotations>

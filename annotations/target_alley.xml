@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>117</id>
+      <name>target_alley</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-04-02 22:59:08.504932+03:00</created>
+      <updated>2019-05-13 22:25:31.121712+03:00</updated>
+      <source>1 images: target_alley.png, ...</source>
+      <labels>
+        <label>
+          <name>dumpsters</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bikes</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pavement</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>fire_escape</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>air_conditioning</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>fire</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>trashbin</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>escape</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sky</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>building</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bollard</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>dumpster</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bike</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>roadblock</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>balcony</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>117</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=117</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-06-02 18:04:39.603728+03:00</dumped>
+  </meta>
+  <image id="0" name="target_alley.png" width="1024" height="768">
+    <polygon label="building" points="525.76,272.99;522.10,427.20;474.10,426.70;472.64,327.73;470.60,244.10;469.70,195.80;527.00,195.90" occluded="1" client_id="26" z_order="15">
+    </polygon>
+    <polygon label="building" points="0.00,710.90;395.24,473.69;475.94,423.87;479.45,272.29;480.85,60.35;481.10,0.00;0.00,0.00" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="air_conditioning" points="264.79,289.27;324.02,295.76;364.07,306.76;382.40,312.68;384.65,326.22;386.63,356.11;383.24,368.80;367.17,373.60;337.56,373.60;312.17,371.06;248.20,355.40;248.15,286.45" occluded="0" client_id="29" z_order="18">
+    </polygon>
+    <polygon label="bollard" points="742.63,574.74;751.63,573.37;771.61,575.13;774.94,579.44;773.18,623.31;773.18,699.11;765.74,702.05;756.92,702.24;751.24,701.85;745.17,698.52;744.19,617.05;740.28,579.05;741.06,576.11" occluded="1" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="bollard" points="592.20,463.91;592.07,507.97;598.87,508.25;599.68,466.76;599.95,462.95;597.51,462.00;592.34,462.14" occluded="0" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="fire_escape" points="753.82,0.00;735.54,93.14;730.13,94.49;717.61,111.41;719.97,184.85;740.62,186.54;751.45,197.37;792.06,219.03;774.80,288.88;768.61,288.88;754.10,294.30;751.85,330.41;754.16,378.23;780.66,385.67;906.55,386.89;907.36,377.96;872.84,375.93;880.56,332.47;883.81,296.73;874.06,262.62;912.61,139.94;993.00,96.30;1024.00,78.10;1024.00,0.00" occluded="0" client_id="30" z_order="19">
+    </polygon>
+    <polygon label="bollard" points="607.94,488.47;609.74,510.55;610.46,541.63;613.70,543.43;616.70,543.43;621.50,543.07;624.26,541.87;622.30,493.60;623.90,489.00;621.60,486.70;612.86,486.55;608.90,486.55" occluded="0" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="dumpsters" points="330.99,441.76;329.42,475.64;330.20,512.46;382.89,515.79;387.39,513.05;402.47,499.34;413.05,494.84;424.60,485.04;432.83,456.45;435.18,434.91;429.30,432.75;397.18,430.60;368.59,433.34;339.02,436.08" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="balcony" points="0.00,0.00;365.30,306.30;403.40,309.70;403.17,156.79;401.41,0.00;114.86,0.00;74.50,0.00" occluded="0" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="pavement" points="0.00,768.00;1024.00,768.00;1024.00,640.08;878.19,555.17;644.50,471.94;522.11,423.17;476.36,422.88;425.06,455.03;101.41,650.47;0.00,713.80" occluded="1" client_id="31" z_order="20">
+    </polygon>
+    <polygon label="roadblock" points="916.65,474.25;942.27,473.31;953.31,472.13;959.19,475.42;962.71,482.47;955.43,528.30;930.59,629.55;882.92,611.50;904.92,514.20;910.28,491.36" occluded="1" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="trashbin" points="522.45,418.12;529.65,417.82;545.45,417.12;550.65,417.32;549.15,440.42;537.65,440.12;526.75,440.22;522.45,439.32;520.05,420.02" occluded="1" client_id="28" z_order="17">
+    </polygon>
+    <polygon label="bikes" points="813.81,558.63;775.74,592.76;762.76,612.78;758.25,637.04;763.05,663.55;779.12,686.11;809.72,706.36;835.38,727.23;844.69,736.25;842.44,748.66;841.87,768.00;1024.00,768.00;1024.00,544.59;992.98,528.15;972.03,523.24;926.59,534.61;913.28,520.11;901.12,515.99;894.07,526.77;889.36,542.64;863.53,549.50;847.85,549.89;842.38,550.09;821.03,554.57" occluded="0" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="bollard" points="648.60,511.90;664.30,511.80;668.38,583.92;666.07,586.23;662.53,587.46;659.00,587.59;656.28,587.05;651.52,586.10;650.97,556.31" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="sky" points="0.00,0.00;1024.00,0.00;1024.00,405.80;0.00,399.60" occluded="1" client_id="46" z_order="21">
+    </polygon>
+    <polygon label="dumpster" points="651.31,465.00;667.55,459.59;709.52,453.16;749.79,449.10;788.03,456.54;793.11,506.63;801.47,597.87;706.95,610.80;675.23,581.25;669.51,561.83" occluded="1" client_id="5" z_order="6">
+    </polygon>
+    <polygon label="building" points="526.90,214.30;521.70,422.50;630.61,466.96;879.74,555.38;1024.00,639.73;1024.00,0.00;635.03,0.00;628.92,5.05;588.29,48.91;561.06,88.35;556.10,138.40;577.80,154.20;543.80,195.23" occluded="1" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="dumpster" points="585.22,437.20;606.11,433.78;644.63,425.62;670.41,428.55;686.73,440.30;693.42,536.92;636.30,541.66;626.18,531.37;606.76,507.38;597.95,493.51" occluded="1" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="bollard" points="523.24,440.09;537.64,449.83;545.23,456.07;558.49,466.38;569.14,479.87;577.76,489.84;580.93,491.20;584.22,491.65;579.12,441.11;558.72,431.58;536.05,427.96;523.70,424.90" occluded="0" client_id="11" z_order="12">
+    </polygon>
+  </image>
+</annotations>

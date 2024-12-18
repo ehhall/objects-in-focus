@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>32</id>
+      <name>clock</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <flipped>False</flipped>
+      <created>2019-01-31 01:24:39.143945+03:00</created>
+      <updated>2019-05-11 02:03:21.602262+03:00</updated>
+      <source>1 images: clock.jpg, ...</source>
+      <labels>
+        <label>
+          <name>buildings</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>trees</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>cars</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>tree</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>car</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sign</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>plant</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>moped</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>cone</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>street</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bus_stop</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>flag</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>clock</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>bus</name>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>building</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>32</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://olive.cmb.ucdavis.edu/?id=32</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>RA</username>
+        <email></email>
+      </owner>
+    </task>
+    <dumped>2019-07-15 22:01:52.482078+03:00</dumped>
+  </meta>
+  <image id="0" name="clock.jpg" width="1024" height="768">
+    <polygon label="plant" points="863.61,383.44;889.93,382.95;903.57,385.83;893.83,480.86;888.50,527.60;856.80,526.20;857.28,500.35;849.97,483.34;846.56,479.44;850.94,402.44;853.87,386.31" occluded="1" client_id="9" z_order="10">
+    </polygon>
+    <polygon label="cone" points="239.89,522.43;248.60,551.80;230.25,551.57;234.95,541.23;235.65,530.89;236.36,523.13" occluded="0" client_id="7" z_order="8">
+    </polygon>
+    <polygon label="moped" points="962.87,484.83;954.74,500.74;944.93,513.26;937.14,528.49;1024.00,538.98;1024.00,505.48;1024.00,478.07;1016.00,484.83;999.75,488.22;982.83,484.83;972.00,483.82" occluded="0" client_id="8" z_order="9">
+    </polygon>
+    <polygon label="clock" points="902.35,374.76;913.31,372.73;921.84,377.20;925.09,389.38;921.84,399.54;914.53,403.19;905.60,402.38;900.72,399.13;897.07,390.60;897.88,379.64" occluded="0" client_id="2" z_order="3">
+    </polygon>
+    <polygon label="sign" points="778.05,393.39;776.36,440.09;826.44,441.45;827.46,393.39" occluded="0" client_id="14" z_order="15">
+    </polygon>
+    <polygon label="cars" points="0.00,687.03;81.55,695.45;143.30,659.66;151.02,611.24;162.25,592.99;168.56,576.15;168.56,537.55;156.63,501.06;136.28,479.31;166.46,480.71;183.30,487.73;209.27,499.66;235.93,496.85;240.85,511.59;242.95,523.52;301.20,523.52;349.62,515.10;367.16,496.85;367.16,473.69;350.32,455.45;316.64,457.55;295.58,445.62;258.39,442.11;237.34,447.73;209.97,449.83;164.35,444.92;122.95,442.82;89.97,439.31;60.49,442.82;45.05,448.43;42.25,473.69;25.40,486.32;0.00,489.13" occluded="0" client_id="16" z_order="17">
+    </polygon>
+    <polygon label="trees" points="1023.99,0.00;0.00,0.00;0.00,399.67;20.31,420.89;18.29,488.60;64.78,494.66;68.82,403.71;133.49,326.91;165.83,280.43;189.07,242.03;266.88,242.03;317.41,329.94;365.92,402.70;396.23,470.41;929.80,541.15;922.73,436.05;935.87,351.16;963.15,276.38;978.31,266.28;1007.61,338.03;1024.00,375.42" occluded="1" client_id="17" z_order="18">
+    </polygon>
+    <polygon label="street" points="38.04,477.90;0.00,491.24;0.00,768.00;1024.00,768.00;1024.00,581.55;429.13,495.03;404.40,489.40;382.10,485.90;352.60,484.50;219.30,471.70" occluded="1" client_id="6" z_order="7">
+    </polygon>
+    <polygon label="flag" points="291.75,263.76;287.05,279.74;287.05,291.97;287.52,307.71;291.99,308.18;292.22,298.55;295.51,292.20;299.04,287.50;300.22,283.51" occluded="0" client_id="4" z_order="5">
+    </polygon>
+    <polygon label="flag" points="264.02,264.94;259.79,270.58;258.85,280.92;258.62,293.38;258.38,302.07;258.85,307.95;263.32,309.12;265.20,301.13;265.90,292.20;273.19,287.27" occluded="0" client_id="3" z_order="4">
+    </polygon>
+    <polygon label="plant" points="756.40,381.44;795.87,382.95;791.97,472.62;787.59,481.34;787.59,509.12;759.81,506.73;758.83,479.44;751.52,476.47;752.99,388.31" occluded="1" client_id="10" z_order="11">
+    </polygon>
+    <polygon label="buildings" points="1024.00,530.54;459.10,477.90;203.65,464.57;75.23,461.76;0.00,465.27;0.00,164.90;19.79,163.37;165.34,150.04;194.46,151.23;194.46,0.00;1024.00,0.00" occluded="1" client_id="0" z_order="1">
+    </polygon>
+    <polygon label="cars" points="556.64,600.71;562.26,618.96;561.55,638.61;565.06,663.87;576.99,679.31;594.54,679.31;599.45,661.06;628.22,675.10;632.43,694.05;640.15,715.10;660.50,716.50;678.05,720.01;737.00,697.56;861.21,692.64;875.24,712.29;893.49,713.70;904.02,715.10;916.65,682.12;924.37,642.82;908.93,608.43;888.58,582.47;889.28,562.82;881.56,550.89;861.21,550.89;854.19,550.19;821.21,508.78;802.26,495.45;724.36,488.43;713.14,478.61;684.36,475.10;644.36,475.10;626.82,475.10;616.99,489.13;602.96,498.96;590.33,517.20;580.50,532.64;574.89,538.26;562.96,514.40;550.33,493.34;539.80,476.50;489.97,472.99;424.71,475.80;410.67,493.34;400.15,515.10;397.34,549.48;398.74,577.55;402.25,590.19;428.92,602.82;527.87,600.01" occluded="0" client_id="15" z_order="16">
+    </polygon>
+    <polygon label="plant" points="366.04,415.07;382.12,417.06;387.48,433.10;388.90,449.70;382.61,460.92;376.76,476.96;361.17,476.96;361.65,458.98;357.30,455.50;357.27,447.23;359.22,436.07;358.24,422.91" occluded="0" client_id="12" z_order="13">
+    </polygon>
+    <polygon label="plant" points="226.66,417.99;240.79,425.30;244.21,438.46;244.69,449.18;244.21,460.88;229.59,460.88;221.79,460.88;220.33,445.77;218.86,436.51;220.81,425.30" occluded="1" client_id="13" z_order="14">
+    </polygon>
+    <polygon label="plant" points="458.63,412.19;467.41,418.04;470.82,442.84;472.77,457.95;470.33,474.08;451.81,474.57;447.91,454.59;447.43,439.48;447.91,421.94;449.86,415.55" occluded="1" client_id="11" z_order="12">
+    </polygon>
+    <polygon label="bus" points="536.70,412.30;613.20,401.90;709.35,407.52;703.73,512.15;594.10,523.20;531.80,512.85" occluded="1" client_id="1" z_order="2">
+    </polygon>
+    <polygon label="bus_stop" points="709.29,380.99;729.32,371.96;747.36,367.73;774.16,367.73;792.21,379.29;790.50,509.70;706.19,506.21" occluded="1" client_id="5" z_order="6">
+    </polygon>
+  </image>
+</annotations>
