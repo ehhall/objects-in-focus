@@ -18,5 +18,5 @@ Paper on the segmentation process:
 
 Papers using these segmentations:
 - [Looking for Semantic Similarity](https://osf.io/wsyz9)
-- [Object Selection](https://link.springer.com/article/10.3758/s13423-023-02286-2)
+- [Object Selection in Passive Viewing](https://link.springer.com/article/10.3758/s13423-023-02286-2)
 - [Surfaces and Visual Search](https://jov.arvojournals.org/article.aspx?articleid=2777949)
