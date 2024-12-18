@@ -5,12 +5,12 @@ This is a suite of data and tools for mapping fixations to objects segmented fro
 ## Google Colab
 
 Notebook with some functions for mapping segmentations and fixations. Full tutorial notebook coming soon!
-- [![Objects in Focus Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IaQnujepMDKIQ6GN7Z2h-8A1r3WZuEU_?usp=sharing)) Objects in Focus Colab
+- [![Objects in Focus Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IaQnujepMDKIQ6GN7Z2h-8A1r3WZuEU_?usp=sharing) Objects in Focus Colab
 
 ## Documentation
 
 Paper on the segmentation process:
-- [Objects in Focus PsyArxiv](https://osf.io/preprints/psyarxiv/k8b9s?view_only=%22)
+- [Objects in Focus](https://osf.io/preprints/psyarxiv/k8b9s?view_only=%22)
 
 Papers using these segmentations:
 - [Looking for Semantic Similarity](https://osf.io/wsyz9)
