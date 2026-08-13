@@ -8,7 +8,7 @@ We would recommend that you wait before using any of the data/code in any offici
 
 ## Google Colab
 
-Notebook with some functions for mapping segmentations and fixations. Full tutorial notebook coming soon!
+Notebook with some functions for mapping segmentations and fixations. Check out notebooks for more ways to segment fixations on objects!
 - [![Objects in Focus Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IaQnujepMDKIQ6GN7Z2h-8A1r3WZuEU_?usp=sharing) Objects in Focus Colab
 
 ## Documentation
