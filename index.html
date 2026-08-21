@@ -1,3 +1,541 @@
-<!doctype html><html lang="en" data-frame-uuid="33d82587-bf1e-449f-9032-d41d45d9e02c"><head><meta property="og:title" content="Claude Artifact"><meta name="twitter:title" content="Claude Artifact"><meta name="description" content="Try out Artifacts created by Claude users"><meta property="og:description" content="Try out Artifacts created by Claude users"><meta name="twitter:description" content="Try out Artifacts created by Claude users"><meta property="og:image" content="https://claude.ai/images/claude_ogimage.png"><meta name="twitter:image" content="https://claude.ai/images/claude_ogimage.png"><meta property="og:image:width" content="1138"><meta property="og:image:height" content="640"><meta property="og:image:alt" content="Claude Artifact"><meta name="twitter:card" content="summary"><meta name="robots" content="noindex, nofollow"><link rel="preconnect" href="https://assets-proxy.anthropic.com" crossorigin><link rel="dns-prefetch" href="https://assets-proxy.anthropic.com"><meta name="build-timestamp" content="1787260420"><meta name="build-git-hash" content="198b59878e778d06c93df56628726df5a8d922da"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><title>Claude Artifact</title><script nonce="pik72t+oJQX3x7qYcvSmNA==">!function(e,t,o){if(t?.embedded&&(e.embedded=""),parent!==window){var n=location.origin,r=location.ancestorOrigins;if(r)r[0]===n&&r[r.length-1]===n&&(e.embedded="");else if(parent===top&&document.referrer)try{new URL(document.referrer).origin===n&&(e.embedded="")}catch{}}"embedded"in e&&"none"===(t?.chrome??o.get("chrome"))&&(e.chrome="none",document.querySelector("meta[name=viewport]").setAttribute("content","width=device-width,initial-scale=1,viewport-fit=cover"));var d=("embedded"in e&&(t?.hostcaps??o.get("hostcaps"))||"").split(" ").filter(function(e,t,o){return("comment-mode"===e||"artifact-nav"===e||"comment-summon"===e||"cloud-session"===e||"cowork-task"===e||"viewer-context"===e)&&o.indexOf(e)===t});d.length&&(e.hostcaps=d.join(" "));var a={mode:["light","dark","system"],platform:["web","desktop"],font:["anthropic","system"]};for(var i of Object.keys(a)){var c=t?.[i]??o.get(i[0]);if("mode"===i&&null==t?.mode&&!("embedded"in e))try{var m=JSON.parse(localStorage.getItem("LSS-userThemeMode"));m&&"object"==typeof m&&(m=m.value),"light"!==m&&"dark"!==m||(c=m)}catch(e){}a[i].includes(c)&&(e[i]=c)}}(document.documentElement.dataset,window.claudeDesktopArtifactPane,new URLSearchParams(location.search))</script><script nonce="pik72t+oJQX3x7qYcvSmNA==">!function(){try{var e=document.documentElement.dataset.frameUuid;if(!e)return;var t=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/,a=new URLSearchParams(location.search),o=a.get("org"),n=(document.cookie.match(/(?:^|;\s*)lastActiveOrg=([^;]*)/)||[])[1],r=o&&t.test(o)?o:n&&t.test(n)?n:null;if(!r)return;var s=self===top&&!("embedded"in document.documentElement.dataset),i=a.get("via"),c=null!==i?i:s?"user_open":"embedded_view",l=a.get("sk"),d=new URLSearchParams;d.set("org",r),c&&d.set("via",c),l&&/^[A-Za-z0-9_-]{16,64}$/.test(l)&&d.set("sk",l);var u=location.pathname.split("/").pop()||"";if(u.toLowerCase().slice(-37)==="-"+e.toLowerCase()){var m=u.slice(0,u.length-37);/^[a-z0-9][a-z0-9-]{0,59}$/.test(m)&&d.set("vanity",m)}var f="/api/frame/"+e+"?"+d.toString(),g=function(e,t){var a=null==e?null:e.toLowerCase();return null!==a&&-1!==t.indexOf(a)?a:null},h=navigator.userAgent,v={"X-Frame-CP":"go","X-Frame-Platform":g(a.get("platform"),["web","desktop","ios","android","cli"])||(h.includes(" Electron/")?"desktop":/Android/.test(h)?"android":/iPad|iPhone|iPod/.test(h)||h.includes("Macintosh")&&navigator.maxTouchPoints>1?"ios":"web")},w=g(a.get("surface"),["chat","cowork","code","slack","teams","standalone"])||(s?"standalone":"");w&&(v["X-Frame-Surface"]=w);var p=fetch(f,{credentials:"same-origin",headers:v,signal:AbortSignal.timeout(2e4)});p.catch(function(){}),window.__frameBootPrefetch={url:f,res:p}}catch(e){}}()</script><link rel="preload" as="font" type="font/woff2" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cc27851ad-DDVos-BJ.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c0f671921-DiY3GvqQ.woff2"><script type="module" crossorigin src="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/frame-shell-B89yM55g.js" nonce="pik72t+oJQX3x7qYcvSmNA=="></script><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/preload-helper-DI4wZ5Gk.js"><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/frame-shell-chrome-ICa-cLxz.js"><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/vendor-frame-_Jg2mXKL.js"><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/rolldown-runtime-C_JJxWoe.js"><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/shared-frame-BQgOUmgd.js"><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/frame-shell-deferred-DoxvlkAw.js"><style nonce="pik72t+oJQX3x7qYcvSmNA==">:root{--font-anthropic-sans:"anthropic-sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif}@font-face{font-family:anthropic-sans;src:url(https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cc27851ad-DDVos-BJ.woff2)format("woff2");font-weight:300 800;font-style:normal;font-display:swap;font-feature-settings:"dlig" 0}@font-face{font-family:anthropic-sans;src:url(https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c9d3a3a49-CJtkx3-S.woff2)format("woff2");font-weight:300 800;font-style:italic;font-display:swap;font-feature-settings:"dlig" 0}:root{--font-anthropic-serif:"anthropic-serif", ui-serif, Georgia, "Times New Roman", serif}@font-face{font-family:anthropic-serif;src:url(https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c66fc489e-2VcCjn5t.woff2)format("woff2");font-weight:300 800;font-style:normal;font-display:swap;font-feature-settings:"dlig" 0}@font-face{font-family:anthropic-serif;src:url(https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cc410af59-Dcb-9NUS.woff2)format("woff2");font-weight:300 800;font-style:italic;font-display:swap;font-feature-settings:"dlig" 0}:root{--bg:#f9f9f7;--fg:#0b0b0b;--mut:#52514e;--line:#0b0b0b1a;--bord:#0b0b0b33;--hov:#0b0b0b0d;--surf:#fff;--brand:#c6613f;--primary:#0b0b0b;--on-primary:#fff}html[data-embedded]{--bg:#fff;--surf:#fff}@media (prefers-color-scheme:dark){html:not([data-mode]){--bg:#0b0b0b;--fg:#f0efec;--mut:#c3c2b7;--line:#ffffff1a;--bord:#fff3;--hov:#ffffff13;--surf:#1a1a19;--primary:#fff;--on-primary:#0b0b0b}html:not([data-mode])[data-embedded]{--bg:#1a1a19;--surf:#20201f}}html[data-mode=light]{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light}html[data-mode=dark]{--bg:#0b0b0b;--fg:#f0efec;--mut:#c3c2b7;--line:#ffffff1a;--bord:#fff3;--hov:#ffffff13;--surf:#1a1a19;--primary:#fff;--on-primary:#0b0b0b;--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark}html[data-mode=dark][data-embedded]{--bg:#1a1a19;--surf:#20201f}@font-face{font-family:Anthropicons-Variable;src:url(https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c0f671921-DiY3GvqQ.woff2)format("woff2-variations");font-weight:400 700;font-display:block}.ico{-webkit-font-smoothing:auto;-webkit-user-select:none;user-select:none;font-family:Anthropicons-Variable;font-size:16px;font-weight:400;line-height:1}:root{--bar-h:36px;--bar:var(--bar-h);--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--lightningcss-light: ;--lightningcss-dark:initial}}@layer{*{box-sizing:border-box;margin:0;padding:0}button{font:inherit;border:0;background:0 0;cursor:pointer;color:inherit}}html,body{overscroll-behavior:none;background:var(--bg);height:100%;color:var(--fg);overflow:hidden}body{font:13px/1.4 anthropic-sans,-apple-system,BlinkMacSystemFont,system-ui,sans-serif}#hdr{height:var(--bar);justify-content:space-between;align-items:center;padding:0 12px;display:flex;position:relative}.l,.r{align-items:center;gap:10px;display:flex}.l{flex:1;min-width:0}.r{flex:none}.logo{background:var(--surf);border:.5px solid var(--bord);width:24px;height:24px;color:var(--fg);border-radius:8px;flex-shrink:0;justify-content:center;align-items:center;text-decoration:none;display:inline-flex}a.logo:hover{background:var(--hov)}.byline{font-size:var(--cds-font-size-caption,12px);color:var(--mut);white-space:nowrap;text-overflow:ellipsis;flex-shrink:0;max-width:312px;overflow:hidden}.l>button[data-title-menu]{flex-shrink:1000;min-width:0;margin-left:-6px;overflow:hidden}.l button[data-title-menu]>span,.l button[data-title-menu] .truncate{min-width:0}.skel{background:var(--hov);border-radius:4px;display:inline-block}.skel-logo{border-radius:8px;width:24px;height:24px}.skel-title{width:8em;height:1em}.skel-avatar{border-radius:50%;width:24px;height:24px}.degraded-title{white-space:nowrap;text-overflow:ellipsis;font-size:14px;font-weight:500;overflow:hidden}#hdr-degraded,body.chrome-degraded #hdr{display:none}body.chrome-degraded #hdr-degraded{height:var(--bar);align-items:center;gap:10px;padding:0 12px;display:flex}@media (width<=768px){:root{--bar-h:50px}#hdr{padding-left:4px}.logo,.skel-logo{display:none}.l{flex-direction:column;justify-content:center;align-items:flex-start;gap:0}.l>button[data-title-menu]{max-width:100%;margin-left:0}.byline{max-width:100%;margin:-2px 0 0 6px}.skel-avatar{width:32px;height:32px}}html[data-embedded]{--bar-h:42px}html[data-embedded] #hdr{padding:0 8px}html[data-embedded] .byline{flex-shrink:1;max-width:100%}html[data-embedded] .skel-logo,html[data-embedded] .skel-title,html[data-embedded] .skel-avatar,html[data-embedded] .logo,html[data-embedded][data-chrome=none] #hdr,html[data-embedded][data-chrome=none] #hdr-degraded,html[data-header-hidden] #hdr,html[data-header-hidden] #hdr-degraded{display:none}html[data-embedded][data-chrome=none],html[data-header-hidden]{--bar:0px}main{inset:var(--bar) 0 0 0;display:flex;position:absolute}#frame-slot{flex:1;min-width:0;position:relative}#loading{justify-content:center;align-items:center;display:flex;position:absolute;inset:0}#loading[hidden]{display:none}#loading.slow{text-align:center;color:var(--mut);flex-direction:column;gap:12px;padding:0 24px;font-size:13px}#loading:after{content:"";border:2px solid var(--line);border-top-color:var(--mut);border-radius:50%;width:24px;height:24px;animation:.8s linear infinite spin}@keyframes spin{to{transform:rotate(360deg)}}#frame-content{width:100%;height:100%;box-shadow:0 0 0 .5px var(--line), 0 2px 4px #0b0b0b12, 0 6px 16px #0b0b0b14;opacity:0;border:0;border-radius:8px 8px 0 0;transition:opacity .12s;position:absolute;inset:0}#frame-slot>iframe.swap:not(.ready){opacity:0;pointer-events:none;border:0;width:100%;height:100%;position:absolute;inset:0}#frame-content.swap{transition:none}#frame-content.swap.crossfade{transition:opacity .12s}#frame-slot>iframe.fading-out{opacity:1;pointer-events:none;border:0;width:100%;height:100%;position:absolute;inset:0}html[data-embedded] #frame-content,html[data-header-hidden] #frame-content,body.embed #frame-content{box-shadow:none;border-radius:0}#frame-content.ready{opacity:1}@media (prefers-reduced-motion:reduce){#loading:after{animation:none}#frame-content{transition:none}}body.err #hdr,body.err #hdr-degraded,#err[hidden]{display:none}#err{text-align:center;color:var(--fg);place-content:safe center;gap:8px;padding:96px 16px 128px;display:grid;position:absolute;inset:0;overflow-y:auto}
-@font-face{font-family:Anthropicons-Variable;src:url(https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c0f671921-DiY3GvqQ.woff2)format("woff2-variations");font-weight:400 700;font-display:block}
-</style><meta name="shell-inline-span" content="2687"><meta name="robots" content="noindex, nofollow"><link rel="preconnect" href="https://33d82587-bf1e-449f-9032-d41d45d9e02c.frame.claudeusercontent.com"></head><body><header id="hdr"><div class="l" aria-hidden="true"><span class="skel skel-logo"></span> <span class="skel skel-title"></span></div><div class="r" aria-hidden="true"><span class="skel skel-avatar"></span></div></header><div id="hdr-degraded"><a class="logo" href="/code/artifacts" aria-label="Your artifacts"><span class="ico" aria-hidden="true">&#xE017;</span></a> <span class="degraded-title"></span> <span class="byline">Content is user-generated and unverified.</span></div><main><div id="frame-slot" data-frame-uuid="33d82587-bf1e-449f-9032-d41d45d9e02c" data-frame-uchost="33d82587-bf1e-449f-9032-d41d45d9e02c.frame.claudeusercontent.com"><div id="loading" role="status" aria-label="Loading"></div></div></main><div id="err" hidden></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Objects in Focus</title>
+<meta name="description" content="A suite of data and tools for mapping fixations to objects segmented from cluttered, real-world scenes.">
+<style>
+@font-face { font-family: Montserrat; src: url('/Montserrat/Montserrat-Regular.ttf'); font-display: swap; }
+
+* { font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; box-sizing: border-box; }
+body { margin: 0; padding: 0 20px 80px; color: #111; background: #fff; }
+
+h1 { text-align: center; font-size: 3vw; margin: 60px 0 0; }
+@media (max-width: 800px) { h1 { font-size: 28px; } }
+h2 { text-align: center; margin: 55px auto 0; font-weight: normal; }
+hr.striped-border { border: 0; border-top: 1px dashed #000; width: 50%; margin: 10px auto 25px; }
+
+p.blocktext { text-align: justify; margin: 0 auto 18px; max-width: 50em; }
+p.blocktext1 { text-align: center; margin: 0 auto; max-width: 50em; padding-top: 20px; }
+p.caption { text-align: center; font-size: 13px; color: #555; max-width: 50em; margin: 8px auto 0; }
+a { color: #111; }
+a.plain { text-decoration: none; }
+a.plain:hover { text-decoration: underline; }
+.tab { padding-left: 30px; }
+.note { max-width: 50em; margin: 25px auto 0; padding: 14px 18px; border: 1px dashed #999; font-size: 14px; text-align: justify; color: #444; }
+
+figure.fig { margin: 25px auto 0; max-width: 60em; text-align: center; }
+figure.fig img { width: 100%; height: auto; display: block; }
+
+.stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 45px; max-width: 50em; margin: 30px auto 0; text-align: center; }
+.stats div span { display: block; font-size: 34px; }
+.stats div small { color: #555; font-size: 13px; }
+
+table.contents { border-collapse: collapse; margin: 25px auto 0; max-width: 50em; width: 100%; font-size: 14px; }
+table.contents td { border-top: 1px solid #e2e2e2; padding: 9px 12px; vertical-align: top; text-align: left; }
+table.contents td:first-child { white-space: nowrap; font-weight: bold; }
+
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; max-width: 68em; margin: 25px auto 0; }
+figure.scene { margin: 0; }
+figure.scene img { width: 100%; height: auto; display: block; border: 1px solid #e2e2e2; }
+figure.scene figcaption { font-size: 12px; color: #555; text-align: center; padding-top: 5px; }
+
+footer { text-align: center; font-size: 13px; color: #555; margin-top: 70px; }
+</style>
+</head>
+<body>
+
+<h1>Objects in Focus</h1>
+
+<p class="blocktext1" style="padding-top:8px;">Mapping fixations to objects segmented from cluttered, real-world scenes</p>
+
+<p class="blocktext1">
+  <a class="plain" href="https://osf.io/preprints/psyarxiv/k8b9s">paper</a>
+  <span class="tab"><a class="plain" href="papers/HiCV_2025_Final.pdf">pdf</a></span>
+  <span class="tab"><a class="plain" href="papers/iccv25_poster_template.pdf">poster</a></span>
+  <span class="tab"><a class="plain" href="https://colab.research.google.com/drive/1IaQnujepMDKIQ6GN7Z2h-8A1r3WZuEU_?usp=sharing">colab</a></span>
+  <span class="tab"><a class="plain" href="https://github.com/ehhall/objects-in-focus">github</a></span>
+  <span class="tab"><a class="plain" href="/">elizabethhhall.com</a></span>
+</p>
+
+<figure class="fig">
+  <img src="thumbs/fig_objects_overlaid.jpg" alt="A backyard scene with every object outlined in a different color">
+  <p class="caption">Every object in a scene, hand-segmented &mdash; including surfaces like grass, walls, and sky.</p>
+</figure>
+
+<h2>overview</h2>
+<hr class="striped-border">
+
+<p class="blocktext">Objects in Focus is a suite of data and tools for mapping eye fixations onto objects in cluttered, real-world scenes. Scene-viewing research has long relied on pixel-level saliency, but people look at <i>things</i>&mdash;so the unit of analysis should be the object. Getting there requires segmentations that are exhaustive rather than convenient: not just the handful of nameable foreground items, but every surface and background region a fixation might land on.</p>
+
+<p class="blocktext">This project documents that segmentation process across 100 scenes, releases the resulting masks and annotations alongside depth estimates, and provides notebooks for assigning fixations to objects. The accompanying paper reports that image size and viewing perspective have a substantial effect on how fixations distribute across objects.</p>
+
+<div class="stats">
+  <div><span>100</span><small>real-world scenes</small></div>
+  <div><span>2,870</span><small>segmented objects</small></div>
+  <div><span>28.7</span><small>objects per scene, on average</small></div>
+  <div><span>7&ndash;74</span><small>range per scene</small></div>
+</div>
+
+<div class="note"><b>Work in progress.</b> The GitHub repository and paper are still being finalized. We'd recommend waiting before using the data or code in any official capacity &mdash; but if you do use it, please cite the papers below.</div>
+
+<h2>what's in the repository</h2>
+<hr class="striped-border">
+
+<table class="contents">
+  <tr><td>images/</td><td>The 100 source scene photographs, full resolution.</td></tr>
+  <tr><td>masks/</td><td>Segmentation masks as NumPy arrays, one per scene.</td></tr>
+  <tr><td>annotations/</td><td>CVAT-format XML with object polygons and labels.</td></tr>
+  <tr><td>depth/</td><td>Monocular depth (disparity) estimates for each scene.</td></tr>
+  <tr><td>notebooks/</td><td>Colab-ready notebooks for mapping fixations to objects, sorting by depth, generating COCO-style annotations, and running DeepGaze comparisons.</td></tr>
+  <tr><td>papers/</td><td>The ICCV 2025 HiCV paper and conference poster.</td></tr>
+  <tr><td>figures/</td><td>Figures from the paper.</td></tr>
+</table>
+
+<p class="blocktext1"><a class="plain" href="https://colab.research.google.com/drive/1IaQnujepMDKIQ6GN7Z2h-8A1r3WZuEU_?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="vertical-align:middle"></a> &nbsp; Start with the Objects in Focus notebook for segmentation and fixation-mapping functions.</p>
+
+<h2>figures</h2>
+<hr class="striped-border">
+
+<figure class="fig">
+  <img src="thumbs/fig_attention_heatmaps.jpg" alt="Five scenes above their object-level attention maps" loading="lazy">
+  <p class="caption">Scenes paired with object-level maps: once fixations are assigned to objects, attention can be summarized per object rather than per pixel.</p>
+</figure>
+
+<figure class="fig" style="max-width:38em;">
+  <img src="thumbs/fig_barplot.jpg" alt="Histogram of the number of objects per scene" loading="lazy">
+  <p class="caption">Objects per scene. Most scenes contain 15&ndash;35 segmented objects; the most cluttered contains 74.</p>
+</figure>
+
+<figure class="fig" style="max-width:38em;">
+  <img src="thumbs/fig_objects_clusters.jpg" alt="Scatterplot of fixation positions grouped into clusters" loading="lazy">
+  <p class="caption">Fixation positions grouped into spatial clusters within a scene.</p>
+</figure>
+
+<h2>documentation</h2>
+<hr class="striped-border">
+
+<p class="blocktext"><b>Paper on the segmentation process</b><br>
+<a class="plain" href="https://osf.io/preprints/psyarxiv/k8b9s">Objects in focus: How object spatial probability underscores eye movement patterns</a><br>
+<i>Elizabeth H. Hall, Zoe Loh</i> &mdash; ICCV 2025, Humans in Computer Vision</p>
+
+<p class="blocktext"><b>Papers using these segmentations</b><br>
+<a class="plain" href="https://osf.io/wsyz9">Looking for Semantic Similarity</a><br>
+<a class="plain" href="https://link.springer.com/article/10.3758/s13423-023-02286-2">Object Selection in Passive Viewing</a><br>
+<a class="plain" href="https://jov.arvojournals.org/article.aspx?articleid=2777949">Surfaces and Visual Search</a></p>
+
+<h2>scenes</h2>
+<hr class="striped-border">
+
+<p class="blocktext1" style="padding-top:0; font-size:14px; color:#555;">All 100 scenes in the set. Click any image for the full-resolution version.</p>
+
+<div class="gallery">
+      <figure class="scene">
+        <a href="images/target_AtticStorage.png"><img src="thumbs/target_AtticStorage.jpg" alt="Attic storage" loading="lazy" width="400" height="300"></a>
+        <figcaption>Attic storage</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_acquarium.png"><img src="thumbs/target_acquarium.jpg" alt="Aquarium" loading="lazy" width="400" height="300"></a>
+        <figcaption>Aquarium</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_airport.png"><img src="thumbs/target_airport.jpg" alt="Airport" loading="lazy" width="400" height="300"></a>
+        <figcaption>Airport</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_alley.png"><img src="thumbs/target_alley.jpg" alt="Alley" loading="lazy" width="400" height="300"></a>
+        <figcaption>Alley</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_amusementpark.png"><img src="thumbs/target_amusementpark.jpg" alt="Amusement park" loading="lazy" width="400" height="300"></a>
+        <figcaption>Amusement park</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_arcade.png"><img src="thumbs/target_arcade.jpg" alt="Arcade" loading="lazy" width="400" height="300"></a>
+        <figcaption>Arcade</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_artstudio.png"><img src="thumbs/target_artstudio.jpg" alt="Art studio" loading="lazy" width="400" height="300"></a>
+        <figcaption>Art studio</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_atticRoom.png"><img src="thumbs/target_atticRoom.jpg" alt="Attic room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Attic room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_backyard.png"><img src="thumbs/target_backyard.jpg" alt="Backyard" loading="lazy" width="400" height="300"></a>
+        <figcaption>Backyard</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_bakery.png"><img src="thumbs/target_bakery.jpg" alt="Bakery" loading="lazy" width="400" height="300"></a>
+        <figcaption>Bakery</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_bar.png"><img src="thumbs/target_bar.jpg" alt="Bar" loading="lazy" width="400" height="300"></a>
+        <figcaption>Bar</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_barn.png"><img src="thumbs/target_barn.jpg" alt="Barn" loading="lazy" width="400" height="300"></a>
+        <figcaption>Barn</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_bathroom.png"><img src="thumbs/target_bathroom.jpg" alt="Bathroom" loading="lazy" width="400" height="300"></a>
+        <figcaption>Bathroom</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_beach.png"><img src="thumbs/target_beach.jpg" alt="Beach" loading="lazy" width="400" height="300"></a>
+        <figcaption>Beach</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_bedroom.png"><img src="thumbs/target_bedroom.jpg" alt="Bedroom" loading="lazy" width="400" height="300"></a>
+        <figcaption>Bedroom</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_boating_IDS01.png"><img src="thumbs/target_boating_IDS01.jpg" alt="Boating" loading="lazy" width="400" height="300"></a>
+        <figcaption>Boating</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_bridge.png"><img src="thumbs/target_bridge.jpg" alt="Bridge" loading="lazy" width="400" height="300"></a>
+        <figcaption>Bridge</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_buffet.png"><img src="thumbs/target_buffet.jpg" alt="Buffet" loading="lazy" width="400" height="300"></a>
+        <figcaption>Buffet</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_building_IDS01.png"><img src="thumbs/target_building_IDS01.jpg" alt="Building" loading="lazy" width="400" height="300"></a>
+        <figcaption>Building</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_busstop.png"><img src="thumbs/target_busstop.jpg" alt="Bus stop" loading="lazy" width="400" height="300"></a>
+        <figcaption>Bus stop</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_campsite.png"><img src="thumbs/target_campsite.jpg" alt="Campsite" loading="lazy" width="400" height="300"></a>
+        <figcaption>Campsite</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_canal.png"><img src="thumbs/target_canal.jpg" alt="Canal" loading="lazy" width="400" height="300"></a>
+        <figcaption>Canal</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_canyon.png"><img src="thumbs/target_canyon.jpg" alt="Canyon" loading="lazy" width="400" height="300"></a>
+        <figcaption>Canyon</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_casino.png"><img src="thumbs/target_casino.jpg" alt="Casino" loading="lazy" width="400" height="300"></a>
+        <figcaption>Casino</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_castle.png"><img src="thumbs/target_castle.jpg" alt="Castle" loading="lazy" width="400" height="300"></a>
+        <figcaption>Castle</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_cemetery.png"><img src="thumbs/target_cemetery.jpg" alt="Cemetery" loading="lazy" width="400" height="300"></a>
+        <figcaption>Cemetery</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_church.png"><img src="thumbs/target_church.jpg" alt="Church" loading="lazy" width="400" height="300"></a>
+        <figcaption>Church</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_city.png"><img src="thumbs/target_city.jpg" alt="City" loading="lazy" width="400" height="300"></a>
+        <figcaption>City</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_classroom.png"><img src="thumbs/target_classroom.jpg" alt="Classroom" loading="lazy" width="400" height="300"></a>
+        <figcaption>Classroom</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_closet.png"><img src="thumbs/target_closet.jpg" alt="Closet" loading="lazy" width="400" height="300"></a>
+        <figcaption>Closet</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_clothingstore.png"><img src="thumbs/target_clothingstore.jpg" alt="Clothing store" loading="lazy" width="400" height="300"></a>
+        <figcaption>Clothing store</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_coffeeshop.png"><img src="thumbs/target_coffeeshop.jpg" alt="Coffee shop" loading="lazy" width="400" height="300"></a>
+        <figcaption>Coffee shop</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_conferencroom.png"><img src="thumbs/target_conferencroom.jpg" alt="Conference room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Conference room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_constructionsite.png"><img src="thumbs/target_constructionsite.jpg" alt="Construction site" loading="lazy" width="400" height="300"></a>
+        <figcaption>Construction site</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_courtroom.png"><img src="thumbs/target_courtroom.jpg" alt="Courtroom" loading="lazy" width="400" height="300"></a>
+        <figcaption>Courtroom</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_deli.png"><img src="thumbs/target_deli.jpg" alt="Deli" loading="lazy" width="400" height="300"></a>
+        <figcaption>Deli</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_dentistoffice.png"><img src="thumbs/target_dentistoffice.jpg" alt="Dentist office" loading="lazy" width="400" height="300"></a>
+        <figcaption>Dentist office</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_desert.png"><img src="thumbs/target_desert.jpg" alt="Desert" loading="lazy" width="400" height="300"></a>
+        <figcaption>Desert</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_desktop.png"><img src="thumbs/target_desktop.jpg" alt="Desktop" loading="lazy" width="400" height="300"></a>
+        <figcaption>Desktop</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_diner.png"><img src="thumbs/target_diner.jpg" alt="Diner" loading="lazy" width="400" height="300"></a>
+        <figcaption>Diner</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_diningroom_IDS01.png"><img src="thumbs/target_diningroom_IDS01.jpg" alt="Dining room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Dining room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_dock.png"><img src="thumbs/target_dock.jpg" alt="Dock" loading="lazy" width="400" height="300"></a>
+        <figcaption>Dock</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_driveway.png"><img src="thumbs/target_driveway.jpg" alt="Driveway" loading="lazy" width="400" height="300"></a>
+        <figcaption>Driveway</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_factory.png"><img src="thumbs/target_factory.jpg" alt="Factory" loading="lazy" width="400" height="300"></a>
+        <figcaption>Factory</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_field.png"><img src="thumbs/target_field.jpg" alt="Field" loading="lazy" width="400" height="300"></a>
+        <figcaption>Field</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_fireworks.png"><img src="thumbs/target_fireworks.jpg" alt="Fireworks" loading="lazy" width="400" height="300"></a>
+        <figcaption>Fireworks</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_fishingvillage.png"><img src="thumbs/target_fishingvillage.jpg" alt="Fishing village" loading="lazy" width="400" height="300"></a>
+        <figcaption>Fishing village</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_forrest.png"><img src="thumbs/target_forrest.jpg" alt="Forest" loading="lazy" width="400" height="300"></a>
+        <figcaption>Forest</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_gameroom_IDS01.png"><img src="thumbs/target_gameroom_IDS01.jpg" alt="Game room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Game room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_garage.png"><img src="thumbs/target_garage.jpg" alt="Garage" loading="lazy" width="400" height="300"></a>
+        <figcaption>Garage</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_garden.png"><img src="thumbs/target_garden.jpg" alt="Garden" loading="lazy" width="400" height="300"></a>
+        <figcaption>Garden</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_grassland.png"><img src="thumbs/target_grassland.jpg" alt="Grassland" loading="lazy" width="400" height="300"></a>
+        <figcaption>Grassland</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_greenhouse.png"><img src="thumbs/target_greenhouse.jpg" alt="Greenhouse" loading="lazy" width="400" height="300"></a>
+        <figcaption>Greenhouse</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_hairsalon.png"><img src="thumbs/target_hairsalon.jpg" alt="Hair salon" loading="lazy" width="400" height="300"></a>
+        <figcaption>Hair salon</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_hardwarestore.png"><img src="thumbs/target_hardwarestore.jpg" alt="Hardware store" loading="lazy" width="400" height="300"></a>
+        <figcaption>Hardware store</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_heliport.png"><img src="thumbs/target_heliport.jpg" alt="Heliport" loading="lazy" width="400" height="300"></a>
+        <figcaption>Heliport</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_highway.png"><img src="thumbs/target_highway.jpg" alt="Highway" loading="lazy" width="400" height="300"></a>
+        <figcaption>Highway</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_hospital.png"><img src="thumbs/target_hospital.jpg" alt="Hospital" loading="lazy" width="400" height="300"></a>
+        <figcaption>Hospital</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_kitchen_IDS01.png"><img src="thumbs/target_kitchen_IDS01.jpg" alt="Kitchen" loading="lazy" width="400" height="300"></a>
+        <figcaption>Kitchen</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_laboratory_IDS01.png"><img src="thumbs/target_laboratory_IDS01.jpg" alt="Laboratory" loading="lazy" width="400" height="300"></a>
+        <figcaption>Laboratory</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_laundryroom.png"><img src="thumbs/target_laundryroom.jpg" alt="Laundry room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Laundry room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_library.png"><img src="thumbs/target_library.jpg" alt="Library" loading="lazy" width="400" height="300"></a>
+        <figcaption>Library</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_livingroom_IDS01.png"><img src="thumbs/target_livingroom_IDS01.jpg" alt="Living room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Living room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_marsh.png"><img src="thumbs/target_marsh.jpg" alt="Marsh" loading="lazy" width="400" height="300"></a>
+        <figcaption>Marsh</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_mediaroom.png"><img src="thumbs/target_mediaroom.jpg" alt="Media room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Media room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_mountain.png"><img src="thumbs/target_mountain.jpg" alt="Mountain" loading="lazy" width="400" height="300"></a>
+        <figcaption>Mountain</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_nursery.png"><img src="thumbs/target_nursery.jpg" alt="Nursery" loading="lazy" width="400" height="300"></a>
+        <figcaption>Nursery</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_office_IDS01.png"><img src="thumbs/target_office_IDS01.jpg" alt="Office" loading="lazy" width="400" height="300"></a>
+        <figcaption>Office</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_park.png"><img src="thumbs/target_park.jpg" alt="Park" loading="lazy" width="400" height="300"></a>
+        <figcaption>Park</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_parkinglot.png"><img src="thumbs/target_parkinglot.jpg" alt="Parking lot" loading="lazy" width="400" height="300"></a>
+        <figcaption>Parking lot</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_patio.png"><img src="thumbs/target_patio.jpg" alt="Patio" loading="lazy" width="400" height="300"></a>
+        <figcaption>Patio</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_playground.png"><img src="thumbs/target_playground.jpg" alt="Playground" loading="lazy" width="400" height="300"></a>
+        <figcaption>Playground</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_pool_IDS01.png"><img src="thumbs/target_pool_IDS01.jpg" alt="Pool" loading="lazy" width="400" height="300"></a>
+        <figcaption>Pool</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_porch.png"><img src="thumbs/target_porch.jpg" alt="Porch" loading="lazy" width="400" height="300"></a>
+        <figcaption>Porch</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_postoffice.png"><img src="thumbs/target_postoffice.jpg" alt="Post office" loading="lazy" width="400" height="300"></a>
+        <figcaption>Post office</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_prairie.png"><img src="thumbs/target_prairie.jpg" alt="Prairie" loading="lazy" width="400" height="300"></a>
+        <figcaption>Prairie</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_racetrack.png"><img src="thumbs/target_racetrack.jpg" alt="Racetrack" loading="lazy" width="400" height="300"></a>
+        <figcaption>Racetrack</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_ranch.png"><img src="thumbs/target_ranch.jpg" alt="Ranch" loading="lazy" width="400" height="300"></a>
+        <figcaption>Ranch</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_recordingstudio.png"><img src="thumbs/target_recordingstudio.jpg" alt="Recording studio" loading="lazy" width="400" height="300"></a>
+        <figcaption>Recording studio</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_refrigerator.png"><img src="thumbs/target_refrigerator.jpg" alt="Refrigerator" loading="lazy" width="400" height="300"></a>
+        <figcaption>Refrigerator</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_restaurant_IDS01.png"><img src="thumbs/target_restaurant_IDS01.jpg" alt="Restaurant" loading="lazy" width="400" height="300"></a>
+        <figcaption>Restaurant</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_ruins.png"><img src="thumbs/target_ruins.jpg" alt="Ruins" loading="lazy" width="400" height="300"></a>
+        <figcaption>Ruins</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_sewingroom.png"><img src="thumbs/target_sewingroom.jpg" alt="Sewing room" loading="lazy" width="400" height="300"></a>
+        <figcaption>Sewing room</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_skatepark.png"><img src="thumbs/target_skatepark.jpg" alt="Skate park" loading="lazy" width="400" height="300"></a>
+        <figcaption>Skate park</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_soccerfield.png"><img src="thumbs/target_soccerfield.jpg" alt="Soccer field" loading="lazy" width="400" height="300"></a>
+        <figcaption>Soccer field</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_stable.png"><img src="thumbs/target_stable.jpg" alt="Stable" loading="lazy" width="400" height="300"></a>
+        <figcaption>Stable</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_stream.png"><img src="thumbs/target_stream.jpg" alt="Stream" loading="lazy" width="400" height="300"></a>
+        <figcaption>Stream</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_street_IDS01.png"><img src="thumbs/target_street_IDS01.jpg" alt="Street" loading="lazy" width="400" height="300"></a>
+        <figcaption>Street</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_subway.png"><img src="thumbs/target_subway.jpg" alt="Subway" loading="lazy" width="400" height="300"></a>
+        <figcaption>Subway</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_swamp.png"><img src="thumbs/target_swamp.jpg" alt="Swamp" loading="lazy" width="400" height="300"></a>
+        <figcaption>Swamp</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_temple.png"><img src="thumbs/target_temple.jpg" alt="Temple" loading="lazy" width="400" height="300"></a>
+        <figcaption>Temple</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_toystore.png"><img src="thumbs/target_toystore.jpg" alt="Toy store" loading="lazy" width="400" height="300"></a>
+        <figcaption>Toy store</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_train.png"><img src="thumbs/target_train.jpg" alt="Train" loading="lazy" width="400" height="300"></a>
+        <figcaption>Train</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_treehouse.png"><img src="thumbs/target_treehouse.jpg" alt="Treehouse" loading="lazy" width="400" height="300"></a>
+        <figcaption>Treehouse</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_tunnel.png"><img src="thumbs/target_tunnel.jpg" alt="Tunnel" loading="lazy" width="400" height="300"></a>
+        <figcaption>Tunnel</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_warehouse.png"><img src="thumbs/target_warehouse.jpg" alt="Warehouse" loading="lazy" width="400" height="300"></a>
+        <figcaption>Warehouse</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_waterfall.png"><img src="thumbs/target_waterfall.jpg" alt="Waterfall" loading="lazy" width="400" height="300"></a>
+        <figcaption>Waterfall</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_waterpark.png"><img src="thumbs/target_waterpark.jpg" alt="Water park" loading="lazy" width="400" height="300"></a>
+        <figcaption>Water park</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_winecellar.png"><img src="thumbs/target_winecellar.jpg" alt="Wine cellar" loading="lazy" width="400" height="300"></a>
+        <figcaption>Wine cellar</figcaption>
+      </figure>
+      <figure class="scene">
+        <a href="images/target_workshop_IDS01.png"><img src="thumbs/target_workshop_IDS01.jpg" alt="Workshop" loading="lazy" width="400" height="300"></a>
+        <figcaption>Workshop</figcaption>
+      </figure>
+</div>
+
+<footer>
+  Elizabeth H. Hall &nbsp;&middot;&nbsp; <a class="plain" href="/">elizabethhhall.com</a> &nbsp;&middot;&nbsp; <a class="plain" href="https://github.com/ehhall/objects-in-focus">github.com/ehhall/objects-in-focus</a>
+</footer>
+
+</body>
+</html>
