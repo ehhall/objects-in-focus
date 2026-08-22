@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Objects in Focus</title>
+<meta name="description" content="A suite of datasets and tools for mapping eye fixations onto objects segmented from cluttered, real-world scenes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* ---------------------------------------------------------------
+   Palette sampled from the magma colormap the paper's heatmaps use:
+   #000004 -> #3B0F70 -> #8C2981 -> #DE4968 -> #FE9F6D -> #FCFDBF
+   Neutrals carry a violet bias from the dark end of that ramp.
+   --------------------------------------------------------------- */
+:root {
+  --ink:        #17111f;
+  --ink-soft:   #4a4157;
+  --ink-faint:  #7d7489;
+  --ground:     #fbfaf7;
+  --surface:    #ffffff;
+  --rule:       #e3dfe8;
+  --rule-soft:  #efecf2;
+
+  --violet:     #3b0f70;
+  --magenta:    #8c2981;
+  --coral:      #d13f5e;
+  --amber:      #e8792f;
+  --accent:     var(--magenta);
+  --accent-ink: #ffffff;
+
+  --shadow: 0 1px 2px rgba(23,17,31,.05), 0 12px 28px -18px rgba(59,15,112,.28);
+
+  --measure: 66ch;
+  --gap: clamp(1rem, 2.5vw, 1.75rem);
+  --pad: clamp(1.25rem, 5vw, 2.5rem);
+
+  --step--1: clamp(.82rem, .8rem + .1vw, .9rem);
+  --step-0:  clamp(1rem, .97rem + .16vw, 1.12rem);
+  --step-1:  clamp(1.2rem, 1.1rem + .45vw, 1.45rem);
+  --step-2:  clamp(1.5rem, 1.3rem + .9vw, 2.1rem);
+  --step-3:  clamp(2rem, 1.6rem + 1.9vw, 3.1rem);
+  --step-4:  clamp(2.6rem, 1.8rem + 3.6vw, 4.9rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink:        #ece7f2;
+    --ink-soft:   #b3a9c0;
+    --ink-faint:  #8a7f99;
+    --ground:     #0c0812;
+    --surface:    #15101d;
+    --rule:       #2b2338;
+    --rule-soft:  #201a2b;
+    --violet:     #7d4fc4;
+    --magenta:    #c757ad;
+    --coral:      #f2637f;
+    --amber:      #fe9f6d;
+    --accent:     var(--amber);
+    --accent-ink: #1b0f06;
+    --shadow: 0 1px 2px rgba(0,0,0,.5), 0 18px 40px -22px rgba(0,0,0,.9);
+  }
+}
+
+:root[data-theme="dark"] {
+  --ink:        #ece7f2;
+  --ink-soft:   #b3a9c0;
+  --ink-faint:  #8a7f99;
+  --ground:     #0c0812;
+  --surface:    #15101d;
+  --rule:       #2b2338;
+  --rule-soft:  #201a2b;
+  --violet:     #7d4fc4;
+  --magenta:    #c757ad;
+  --coral:      #f2637f;
+  --amber:      #fe9f6d;
+  --accent:     var(--amber);
+  --accent-ink: #1b0f06;
+  --shadow: 0 1px 2px rgba(0,0,0,.5), 0 18px 40px -22px rgba(0,0,0,.9);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: var(--step-0);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .ui {
+  font-family: Archivo, "Helvetica Neue", Arial, sans-serif;
+  text-wrap: balance;
+}
+
+code, kbd, .mono {
+  font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+a { color: inherit; text-decoration-color: color-mix(in oklab, var(--accent) 55%, transparent); text-underline-offset: .18em; }
+a:hover { text-decoration-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { width: min(100% - calc(var(--pad) * 2), 1180px); margin-inline: auto; }
+.prose { max-width: var(--measure); }
+
+/* ---------- top bar ---------- */
+.bar {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in oklab, var(--ground) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule-soft);
+}
+.bar-inner { display: flex; align-items: center; gap: var(--gap); padding-block: .7rem; }
+.mark { display: flex; align-items: center; gap: .55rem; font-family: Archivo, sans-serif; font-weight: 800; letter-spacing: -.02em; font-size: var(--step--1); }
+.ramp { display: block; width: 34px; height: 10px; border-radius: 2px;
+        background: linear-gradient(90deg, #000004, #3b0f70, #8c2981, #de4968, #fe9f6d, #fcfdbf); }
+.bar nav { margin-left: auto; display: flex; gap: clamp(.75rem, 2vw, 1.6rem); flex-wrap: wrap; }
+.bar nav a { font-family: Archivo, sans-serif; font-size: var(--step--1); font-weight: 500; color: var(--ink-soft); text-decoration: none; }
+.bar nav a:hover { color: var(--accent); }
+
+/* ---------- hero ---------- */
+.hero { padding-block: clamp(3rem, 9vw, 6.5rem) clamp(2rem, 5vw, 3.5rem); position: relative; overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: -30% -10% auto -10%; height: 70%;
+  background: radial-gradient(60% 100% at 30% 0%, color-mix(in oklab, var(--violet) 16%, transparent), transparent 70%),
+              radial-gradient(45% 90% at 78% 10%, color-mix(in oklab, var(--amber) 14%, transparent), transparent 72%);
+  pointer-events: none;
+}
+.hero > * { position: relative; }
+.eyebrow { font-family: "IBM Plex Mono", monospace; font-size: var(--step--1); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 1.1rem; }
+h1 { font-size: var(--step-4); line-height: .96; letter-spacing: -.035em; font-weight: 800; margin: 0 0 1.2rem; max-width: 15ch; }
+.lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink-soft); max-width: 54ch; margin: 0 0 2rem; }
+.lede strong { color: var(--ink); font-weight: 600; }
+
+.cta-row { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: Archivo, sans-serif; font-weight: 600; font-size: var(--step--1);
+  padding: .68rem 1.1rem; border-radius: 6px; text-decoration: none;
+  border: 1px solid var(--rule); color: var(--ink); background: var(--surface);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.btn:hover { transform: translateY(-1px); border-color: var(--accent); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.btn-primary:hover { border-color: transparent; }
+
+/* ---------- figures ---------- */
+figure { margin: 0; }
+.figure-frame {
+  border: 1px solid var(--rule); border-radius: 8px; overflow: hidden;
+  background: var(--surface); box-shadow: var(--shadow); line-height: 0;
+}
+.figure-frame img { width: 100%; height: auto; display: block; }
+figcaption { font-family: "IBM Plex Mono", monospace; font-size: var(--step--1); line-height: 1.55; color: var(--ink-faint); margin-top: .7rem; max-width: 62ch; }
+figcaption b { color: var(--ink-soft); font-weight: 500; }
+
+/* ---------- sections ---------- */
+section { padding-block: clamp(2.5rem, 7vw, 4.5rem); border-top: 1px solid var(--rule-soft); }
+.sec-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.6rem; flex-wrap: wrap; }
+h2 { font-size: var(--step-3); letter-spacing: -.03em; line-height: 1.05; font-weight: 800; margin: 0; }
+h3 { font-size: var(--step-1); letter-spacing: -.02em; margin: 0 0 .4rem; font-weight: 600; }
+.sec-note { font-family: "IBM Plex Mono", monospace; font-size: var(--step--1); color: var(--ink-faint); }
+p { margin: 0 0 1.1rem; }
+
+/* ---------- numbers ---------- */
+.numbers { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+.num { background: var(--surface); padding: 1.15rem 1.2rem; }
+.num b { display: block; font-family: Archivo, sans-serif; font-weight: 800; font-size: var(--step-2); letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.num span { display: block; margin-top: .4rem; font-family: "IBM Plex Mono", monospace; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); }
+
+/* ---------- gallery ---------- */
+.stack { display: grid; gap: clamp(2rem, 5vw, 3.2rem); }
+.split { display: grid; gap: clamp(1.5rem, 4vw, 2.5rem); grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .split { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } .split.flip { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); } }
+.split .text { max-width: 46ch; }
+
+/* ---------- code ---------- */
+pre {
+  margin: 0; padding: 1.1rem 1.2rem; border-radius: 8px; overflow-x: auto;
+  background: var(--surface); border: 1px solid var(--rule);
+  font-family: "IBM Plex Mono", monospace; font-size: .86rem; line-height: 1.7; color: var(--ink);
+}
+pre .c { color: var(--ink-faint); }
+pre .k { color: var(--accent); }
+code { font-size: .9em; background: color-mix(in oklab, var(--accent) 9%, transparent); padding: .1em .35em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+
+/* ---------- lists ---------- */
+.plain { list-style: none; padding: 0; margin: 0; display: grid; gap: .9rem; }
+.plain li { display: grid; grid-template-columns: auto 1fr; gap: .8rem; align-items: start; }
+.tick { width: 8px; height: 8px; border-radius: 2px; margin-top: .55em; background: var(--accent); }
+.tick.v2 { background: var(--violet); } .tick.v3 { background: var(--coral); }
+
+.papers { display: grid; gap: 1.1rem; padding: 0; margin: 0; list-style: none; }
+.papers li { border-left: 2px solid var(--rule); padding-left: 1rem; }
+.papers .who { display: block; font-family: "IBM Plex Mono", monospace; font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-faint); margin-top: .25rem; }
+
+footer { border-top: 1px solid var(--rule-soft); padding-block: 2.5rem 3.5rem; color: var(--ink-faint); font-size: var(--step--1); }
+footer a { color: var(--ink-soft); }
+
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .btn:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <span class="mark"><span class="ramp" aria-hidden="true"></span> Objects in Focus</span>
+    <nav>
+      <a href="#data">The data</a>
+      <a href="#heatmaps">Heatmaps</a>
+      <a href="#poster">Poster</a>
+      <a href="#tutorial">Tutorial</a>
+      <a href="#install">Get it</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Dataset &amp; Python package · ICCV 2025 HiCV</p>
+    <h1>What was this person looking&nbsp;at?</h1>
+    <p class="lede">An eye-tracker tells you <strong>where</strong> someone looked — an x and a y.
+    Research on attention usually needs the other answer: <strong>what</strong> they looked at.
+    100 real-world scenes with every object segmented by hand, and the tools to get from one answer to the other.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://colab.research.google.com/github/ehhall/objects-in-focus/blob/main/notebooks/objects_in_focus_tutorial.ipynb">Open the tutorial in Colab</a>
+      <a class="btn" href="https://github.com/ehhall/objects-in-focus">Code &amp; data on GitHub</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap reveal">
+  <figure>
+    <div class="figure-frame"><img src="assets/pkg_objects.jpg" alt="Three panels: a living room photograph; the same photograph with 27 object outlines in different colours; the objects filled with a colour scale showing their size."></div>
+    <figcaption><b>One scene, three views.</b> The photograph, its 27 hand-segmented objects, and those objects filled with a measured value — here, size. Every figure on this page was made with the package.</figcaption>
+  </figure>
+</div>
+
+<section id="data">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The data</h2>
+      <span class="sec-note">100 scenes · 1024 × 768 · CVAT polygons</span>
+    </div>
+
+    <div class="stack">
+      <div class="numbers">
+        <div class="num"><b>100</b><span>scenes</span></div>
+        <div class="num"><b>2,427</b><span>segmented objects</span></div>
+        <div class="num"><b>359</b><span>object labels</span></div>
+        <div class="num"><b>24</b><span>objects per scene</span></div>
+        <div class="num"><b>41%</b><span>partly occluded</span></div>
+      </div>
+
+      <div class="split">
+        <figure>
+          <div class="figure-frame"><img src="assets/image_grid.jpg" alt="A grid of ten scenes from the dataset: living room, kitchen, bakery, beach, bar, church, garden, workshop, subway platform, canyon."></div>
+          <figcaption><b>Fifty indoor, fifty outdoor.</b> Photographs, not renders, and cluttered on purpose.</figcaption>
+        </figure>
+        <div class="text">
+          <h3>Everything is segmented, not just the foreground</h3>
+          <p>Each scene was outlined polygon by polygon in CVAT at full resolution — 2,870 polygons in total, labelled from the ConceptNet vocabulary rather than a fixed category list. When a fixation lands somewhere, there is an annotated object under it.</p>
+          <p>Every scene also carries a monocular depth map. Objects are painted into the label map back to front, so the one that wins an overlap is the one nearest the viewer — the thing they actually saw.</p>
+          <ul class="plain">
+            <li><span class="tick" aria-hidden="true"></span><span>Hand-drawn polygons with occlusion flags, exported from CVAT</span></li>
+            <li><span class="tick v2" aria-hidden="true"></span><span>Integer label maps: <code>mask[y, x]</code> is the object at that pixel</span></li>
+            <li><span class="tick v3" aria-hidden="true"></span><span>MonoDepth2 depth for every scene</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="split flip">
+        <div class="text">
+          <h3>Depth decides who wins an overlap</h3>
+          <p>A chair in front of a table shares pixels with it. Without a depth order, whichever polygon was drawn last takes them — and fixations get attributed to an object hidden behind another one.</p>
+          <p>Objects the annotator flagged as occluded are painted first regardless of their depth score, so an object can never end up sitting on top of the thing that hides it.</p>
+        </div>
+        <figure>
+          <div class="figure-frame"><img src="assets/pkg_depth.jpg" alt="Three panels: a kitchen photograph, its estimated depth map in blue-green, and each object filled with its depth value."></div>
+          <figcaption><b>Kitchen scene, estimated depth, depth per object.</b> Relative depth, not metres — enough to order objects front to back.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="heatmaps">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Where attention goes</h2>
+      <span class="sec-note">Figures from Hall &amp; Loh, ICCV 2025 HiCV</span>
+    </div>
+
+    <div class="stack">
+      <div class="split">
+        <figure class="reveal">
+          <div class="figure-frame"><img src="assets/fig_density.png" alt="Three heatmaps side by side: all objects overlaid, all objects excluding background, and fixation density. The object maps are broad and textured; the fixation map is a single bright centre."></div>
+        </figure>
+        <div class="text">
+          <h3>Objects are everywhere. Fixations are not.</h3>
+          <p>Pile up every object across all 100 scenes and you get a broad, textured band across the middle of the frame. Pile up every fixation and you get one bright blob in the centre.</p>
+          <p>That gap is the problem the model has to explain: objects are distributed one way, attention another. Size and position account for much of the difference — but not all of it, and the leftover is where meaning lives.</p>
+        </div>
+      </div>
+
+      <div class="split flip">
+        <div class="text">
+          <h3>Predicted, observed, and the gap between</h3>
+          <p>Four numbers about an object — its size, how far it sits from the centre, how far away it is, and how salient — predict how many fixations it collects. On these scenes that model explains <b>82%</b> of the variance in cumulative fixations per object.</p>
+          <p>Reading down each column: the scene, the model's prediction per object, what viewers actually did, the absolute residual, and the classic Gaussian fixation density map. The residual row is the interesting one — objects that pulled far more attention than their geometry can account for.</p>
+          <p class="sec-note">Rows: prediction · true · residual · density</p>
+        </div>
+        <figure class="reveal">
+          <div class="figure-frame"><img src="assets/fig_prediction.jpg" alt="A grid of heatmaps for three scenes — fireworks over a city, a swamp, a city skyline. Each column shows the scene photograph, predicted attention per object, true attention, absolute residual, and a Gaussian fixation density map."></div>
+        </figure>
+      </div>
+
+      <div class="split">
+        <figure class="reveal">
+          <div class="figure-frame"><img src="assets/attention_heatmaps.jpg" alt="Top row: five scene photographs. Bottom row: each scene's objects filled with the attention they received, in a hot colour scale."></div>
+        </figure>
+        <div class="text">
+          <h3>Attention, redrawn as objects</h3>
+          <p>The usual fixation heatmap is a blur over pixels. Fill each segmented object with the attention it received instead and the map becomes a statement about things rather than places — this sofa, that window — which is what a theory of object-based attention actually needs.</p>
+        </div>
+      </div>
+
+      <div class="split flip">
+        <div class="text">
+          <h3>What the model weighs, and where it breaks</h3>
+          <p>Size carries the most weight. Eccentricity and depth both pull negative: central and nearer objects attract more fixations.</p>
+          <p>Trained on OiF the model reaches R² = 0.82; on COCO-Freeview, 0.66; pooled across both without a dataset term it falls to 0.49. Viewpoint, viewers per image and retinal object size differ between the sets, and the model feels it. That failure to generalise is the paper's real finding.</p>
+        </div>
+        <figure class="reveal">
+          <div class="figure-frame"><img src="assets/fig_coefficients.png" alt="Scatter plot of model coefficients across four models: eccentricity and depth negative, size and salience positive, and a large positive dataset term in the combined model."></div>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="poster">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The poster</h2>
+      <span class="sec-note">ICCV 2025 · Workshop on Human-Inspired Computer Vision</span>
+    </div>
+    <div class="split">
+      <figure class="reveal">
+        <div class="figure-frame"><img src="assets/poster.jpg" alt="The ICCV 2025 conference poster: Objects in Focus, Predicting Object-Based Attention from Spatial Features, by Elizabeth Hall and Zoe Loh, with dataset examples, distribution plots and prediction heatmaps."></div>
+      </figure>
+      <div class="text">
+        <h3>Objects in Focus: Predicting Object-Based Attention from Spatial Features</h3>
+        <p>Elizabeth Hall (Meta) and Zoe Loh (UC Merced). The full poster covers the segmentation process, both datasets, the model and the generalisation results.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://github.com/ehhall/objects-in-focus/blob/main/papers/HiCV_2025_Final.pdf">Read the paper (PDF)</a>
+          <a class="btn" href="https://github.com/ehhall/objects-in-focus/blob/main/papers/iccv25_poster_template.pdf">Poster (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tutorial">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Learn it in a browser tab</h2>
+      <span class="sec-note">No installation · about five minutes</span>
+    </div>
+    <div class="split">
+      <div class="text">
+        <p>The Colab tutorial installs the package, downloads a handful of scenes and walks through the whole path — open a scene, look at its objects, map fixations onto them, build a table, fit the model — with a picture at every step.</p>
+        <p>If you have never written Python, this is the place to start. Press the play buttons in order.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://colab.research.google.com/github/ehhall/objects-in-focus/blob/main/notebooks/objects_in_focus_tutorial.ipynb">Open the tutorial in Colab</a>
+        </div>
+      </div>
+      <div>
+<pre><code><span class="c"># the line this whole package exists for</span>
+<span class="k">from</span> oif <span class="k">import</span> OiF
+
+data  = OiF()
+scene = data[<span class="k">"target_kitchen_IDS01"</span>]
+
+looked_at = scene.map_fixations(
+    data.fixations(),
+    method=<span class="k">"disc"</span>, radius=<span class="k">25</span>,
+)
+
+<span class="c">#      x      y  duration    label</span>
+<span class="c">#  512.0  380.0     243.0  cabinet</span>
+<span class="c">#  733.0  455.0     198.0     sink</span>
+<span class="c">#  120.0  610.0     310.0    stool</span></code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Get it</h2>
+      <span class="sec-note">Python 3.9+ · MIT code · CC BY 4.0 data</span>
+    </div>
+    <div class="split">
+      <div>
+<pre><code>git clone https://github.com/ehhall/objects-in-focus.git
+cd objects-in-focus
+pip install -e <span class="k">".[full]"</span>
+
+oif check      <span class="c"># is my copy of the data complete?</span>
+oif labels     <span class="c"># what each mask id is</span>
+oif repair     <span class="c"># rebuild files that shipped truncated</span>
+oif objects --fixations raw/ --out objects.csv</code></pre>
+      </div>
+      <div class="text">
+        <h3>Bring your own fixations</h3>
+        <p>Drop your eye-tracker's CSV exports into <code>raw/</code>. SR Research DataViewer exports are recognised without being told; anything else takes one <code>columns={…}</code> argument. Whatever goes in, the same tidy table comes out.</p>
+        <p>The package also fixes what the original release could not: it recovers what every mask id actually is — the release shipped none — and rebuilds nine mask files that were uploaded truncated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="papers">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Papers</h2>
+      <span class="sec-note">Please cite if you use the data</span>
+    </div>
+    <div class="split">
+      <div class="text">
+        <h3>This work</h3>
+        <ul class="papers">
+          <li>Objects in Focus: Predicting Object-Based Attention from Spatial Features.
+            <span class="who">Hall &amp; Loh · ICCV 2025 HiCV Workshop</span></li>
+          <li><a href="https://osf.io/preprints/psyarxiv/k8b9s">Objects in Focus</a> — the segmentation process.
+            <span class="who">PsyArXiv preprint</span></li>
+        </ul>
+      </div>
+      <div class="text">
+        <h3>Built on these segmentations</h3>
+        <ul class="papers">
+          <li><a href="https://osf.io/wsyz9">Looking for semantic similarity in scenes</a>
+            <span class="who">Hayes &amp; Henderson · Psychological Science, 2021</span></li>
+          <li><a href="https://link.springer.com/article/10.3758/s13423-023-02286-2">Objects are selected for attention based upon meaning</a>
+            <span class="who">Peacock, Hall &amp; Henderson · Psychonomic Bulletin &amp; Review, 2023</span></li>
+          <li><a href="https://jov.arvojournals.org/article.aspx?articleid=2777949">Surface-based attention and visual search</a>
+            <span class="who">Hall &amp; Henderson · Journal of Vision, 2021</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Objects in Focus · code MIT, data CC BY 4.0 · <a href="https://github.com/ehhall/objects-in-focus">github.com/ehhall/objects-in-focus</a></p>
+    <p>Salience maps come from <a href="https://github.com/matthias-k/DeepGaze">DeepGaze</a>; depth from <a href="https://github.com/nianticlabs/monodepth2">MonoDepth2</a>. Comparison data: COCO-Freeview and COCO-Stuff.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var targets = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    targets.forEach(function (el) { el.classList.add("in"); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) { entry.target.classList.add("in"); io.unobserve(entry.target); }
+    });
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+  targets.forEach(function (el) { io.observe(el); });
+})();
+</script>
+
+</body>
+</html>

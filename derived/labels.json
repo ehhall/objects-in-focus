@@ -1,0 +1,8 @@
+{
+  "generated_by": "oif.datasets.oif.OiF.write_labels",
+  "n_rows": 2427,
+  "n_scenes": 100,
+  "min_match_score": 0.992872,
+  "n_low_confidence": 0,
+  "n_rebuilt_scenes": 9
+}

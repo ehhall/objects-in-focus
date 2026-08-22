@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "Objects in Focus: datasets and tools for mapping fixations to segmented objects"
+message: "If you use this dataset or software, please cite both the software and the paper below."
+type: software
+authors:
+  # Add `orcid:` lines here if you would like ORCIDs in the citation metadata.
+  - family-names: Hall
+    given-names: Elizabeth H.
+  - family-names: Loh
+    given-names: Zoe
+    affiliation: "University of California, Merced"
+repository-code: "https://github.com/ehhall/objects-in-focus"
+url: "https://ehhall.github.io/objects-in-focus/"
+abstract: >-
+  A suite of datasets and tools for mapping eye-movement fixations onto
+  objects segmented from cluttered, real-world scenes. Includes 100 fully
+  segmented scenes with depth maps, a Python package for fixation-to-object
+  mapping and per-object feature extraction, and the object-based attention
+  model from Hall & Loh (2025).
+keywords:
+  - eye tracking
+  - object-based attention
+  - scene perception
+  - image segmentation
+  - visual salience
+license: MIT
+version: 0.1.0
+date-released: "2025-08-21"
+preferred-citation:
+  type: conference-paper
+  title: "Objects in Focus: Predicting Object-Based Attention from Spatial Features"
+  authors:
+    - family-names: Hall
+      given-names: Elizabeth H.
+    - family-names: Loh
+      given-names: Zoe
+  collection-title: "Proceedings of the ICCV 2025 Workshop on Human-Inspired Computer Vision"
+  year: 2025

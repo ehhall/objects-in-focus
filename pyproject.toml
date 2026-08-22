@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oif"
+version = "0.1.0"
+description = "Datasets and tools for mapping fixations to objects segmented from cluttered, real-world scenes"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Elizabeth H. Hall", email = "ehlhall1@gmail.com" },
+]
+keywords = [
+    "eye-tracking", "fixations", "scene perception", "object-based attention",
+    "segmentation", "saliency", "visual cognition", "gaze",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "scipy>=1.7",
+    "opencv-python-headless>=4.5",
+    "pillow>=8.0",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.4"]
+stats = ["statsmodels>=0.13"]
+full = ["matplotlib>=3.4", "statsmodels>=0.13", "scikit-learn>=1.0", "tqdm>=4.60"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "matplotlib>=3.4",
+    "statsmodels>=0.13",
+    "ruff>=0.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/ehhall/objects-in-focus"
+Documentation = "https://ehhall.github.io/objects-in-focus/"
+Source = "https://github.com/ehhall/objects-in-focus"
+Issues = "https://github.com/ehhall/objects-in-focus/issues"
+Preprint = "https://osf.io/preprints/psyarxiv/k8b9s"
+
+[project.scripts]
+oif = "oif.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+# The typing-modernisation rules assume 3.10+ syntax everywhere. This package
+# supports 3.9, and `typing.Optional`/`Tuple` read fine, so they stay.
+ignore = ["E501", "UP006", "UP035", "UP045"]
