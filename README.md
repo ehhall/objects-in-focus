@@ -30,6 +30,10 @@ runs in your browser. It installs the package, downloads the data, and walks
 through mapping fixations to objects with pictures at every step. If you have
 never used Python before, start there — press the play buttons in order.
 
+There is a second notebook, the [**package tour**](https://colab.research.google.com/github/ehhall/objects-in-focus/blob/main/notebooks/package_tour.ipynb),
+with one section per module — what every function in `oif` is for and how to
+call it. Read the tutorial first, keep the tour open as a reference.
+
 ## Start here (on your own machine)
 
 ```bash
